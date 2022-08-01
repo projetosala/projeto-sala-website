@@ -1,11 +1,13 @@
 import React from 'react';
 import { ChevronDown } from 'react-feather';
 import PropTypes from 'prop-types';
+import Menu from '../Menu';
 import styles from './styles.module.css';
 
 export default function Header({ title, description, hasChevronDown }) {
   return (
     <div className={styles.container}>
+      <Menu />
       <div>
         <h1 className={styles.title}>{title}</h1>
         <p className={styles.description}>{description}</p>
