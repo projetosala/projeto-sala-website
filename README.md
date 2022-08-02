@@ -1,7 +1,7 @@
 # Quest Ambiental
 Repositório de código do site Quest Ambiental.
 
-Caso queira contribuir com novas funcionalidades, melhorias e/ou correções no projeto, siga os passos do arquivo [CONTRIBUTING.md](./CONTRIBUTING.md).
+Caso queira contribuir com novas funcionalidades, melhorias e/ou correções no projeto, siga os passos do arquivo [CONTRIBUTING.md](./.github/CONTRIBUTING.md).
 
 ## :art: Design
 O design do site foi criado no Figma. Para acessar o protótipo, [clique aqui](https://figma.com/file/F4AeiLaW8Yi7zr4eCuLtpX/Website).

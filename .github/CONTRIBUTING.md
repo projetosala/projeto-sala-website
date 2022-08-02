@@ -21,7 +21,7 @@
 - [NodeJS](https://nodejs.org/en/) - desenvolvimento do site;
 - Editor de código (ex.: [Visual Studio Code](https://code.visualstudio.com/Download));
 
-## 2. Siga os passos do [Guia de Instalação](./README.md#compass-guia-de-instalação)
+## 2. Siga os passos do [Guia de Instalação](../README.md#compass-guia-de-instalação)
 Com isso, você terá tudo o que é necessário para executar a aplicação.
 
 Após seguir todos os passos do guia, execute as seguintes instruções:
@@ -104,10 +104,10 @@ git add .
 ```
 
 ```bash
-git commit -m "..."
-
-# No lugar de ..., descreva as alterações que você fez, preferencialmente em inglês, de forma breve
+git commit -m "tipo: mensagem"
 ```
+
+Verifique no arquivo [`semantics.md`](./semantics.md) o padrão de mensagens de _commit_ que você deve seguir.
 
 ## 8. Enviar as modificações para análise
 Após fazer e registrar as alterações, é necessário enviá-las para o repositório remoto. Assim, todos poderão ver a sua contribuição.
@@ -124,6 +124,14 @@ git push origin <nome-da-branch>
 > Não sabe o que é um _Pull Request_? [Clique aqui](https://docs.github.com/pt/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/about-pull-requests) para entender.
 
 Você pode seguir [este guia](https://docs.github.com/pt/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/creating-a-pull-request) para criar um _pull request_.
+
+Na criação do PR, siga o padrão abaixo na definição do título:
+
+```
+tipo: Breve descrição
+```
+
+Verifique no arquivo [`semantics.md`](./semantics.md) o tipo que você deve adicionar.
 
 Após a criação do PR, espere alguém analisar o seu código e indicar o que deve ser feito.
 
