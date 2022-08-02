@@ -1,0 +1,30 @@
+html {
+  /* FONT FAMILY */
+  --text-fonts: 'Poppins', sans-serif;
+  --title-fonts: 'Lora', serif;
+
+  /* FONT SIZE */
+  --big-title-size: 3.2rem;
+  --title-size: 2.4rem;
+  --subtitle-size: 1.8rem;
+  --text-size: 1.6rem;
+  --text-small-size: 1.4rem;
+
+  /* COLOR */
+  --primary: #DAAE84;
+  --text-secondary: #AEAEAE;
+  --white: #EFEFEF;
+  --background: #1E2730;
+  --section-light: #303942;
+  --section-medium: #161F28;
+  --section-dark: #151C23;
+
+  /* BORDER */
+  --border: 2px solid #545D66;
+  --light-border: 1px solid rgba(255, 255, 255, 0.15);
+
+  /* GRADIENT */
+  --gradient-to-top: linear-gradient(180deg, rgba(30, 39, 48, 0.5) 0%, var(--background) 100%);
+  --gradient-to-right: linear-gradient(90deg, var(--background) 0%, var(--background) 15.63%, rgba(30, 39, 48, 0) 100%);
+  --gradient-to-left: linear-gradient(90deg, rgba(30, 39, 48, 0) 0%, var(--background) 84.43%, var(--background) 100%);;
+}
