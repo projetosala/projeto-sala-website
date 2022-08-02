@@ -21,7 +21,7 @@
 - [NodeJS](https://nodejs.org/en/) - desenvolvimento do site;
 - Editor de código (ex.: [Visual Studio Code](https://code.visualstudio.com/Download));
 
-## 2. Siga os passos do [Guia de Instalação](../README.md#compass-guia-de-instalação)
+## 2. Siga os passos do [Guia de Instalação](../../README.md#compass-guia-de-instalação)
 Com isso, você terá tudo o que é necessário para executar a aplicação.
 
 Após seguir todos os passos do guia, execute as seguintes instruções:
