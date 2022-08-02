@@ -1,17 +1,14 @@
 ### Descrição:
-> Resumidamente, o que você fez neste pull request?
+<!-- Resumidamente, o que você fez neste pull request? -->
 
-...
 
-### Alterações realizadas:
-> O que você adicionou, removeu, modificou?
+**Issue: ** <!-- Coloque o identificador da issue (ex.: #1) -->
 
-- ...
+<!--
+  Se possível, coloque aqui imagens ou vídeos do
+  resultado final do que você desenvolveu
+-->
 
-### Issues relacionadas:
-> Coloque o identificador da issue (ex.: #1)
-
-- ...
 
 ---
 
