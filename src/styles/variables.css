@@ -4,11 +4,11 @@ html {
   --title-fonts: 'Lora', serif;
 
   /* FONT SIZE */
-  --big-title-size: 3.2rem;
-  --title-size: 2.4rem;
-  --subtitle-size: 1.8rem;
-  --text-size: 1.6rem;
-  --text-small-size: 1.4rem;
+  --big-title-size: 4.8rem;
+  --title-size: 3.2rem;
+  --subtitle-size: 2rem;
+  --text-size: 1.8rem;
+  --text-small-size: 1.6rem;
 
   /* COLOR */
   --primary: #DAAE84;
