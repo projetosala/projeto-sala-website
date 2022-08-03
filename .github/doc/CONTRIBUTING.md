@@ -107,7 +107,7 @@ git add .
 git commit -m "tipo: mensagem"
 ```
 
-Verifique no arquivo [`semantics.md`](./semantics.md) o padrão de mensagens de _commit_ que você deve seguir.
+Verifique no arquivo [`conventions.md`](./conventions.md) o padrão de mensagens de _commit_ que você deve seguir.
 
 ## 8. Enviar as modificações para análise
 Após fazer e registrar as alterações, é necessário enviá-las para o repositório remoto. Assim, todos poderão ver a sua contribuição.
@@ -131,7 +131,7 @@ Na criação do PR, siga o padrão abaixo na definição do título:
 tipo: Breve descrição
 ```
 
-Verifique no arquivo [`semantics.md`](./semantics.md) o tipo que você deve adicionar.
+Verifique no arquivo [`conventions.md`](./conventions.md) o tipo que você deve adicionar.
 
 Após a criação do PR, espere alguém analisar o seu código e indicar o que deve ser feito.
 
