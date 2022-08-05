@@ -1,5 +1,10 @@
+import Header from '../components/Header';
+
 export default function Index() {
   return (
-    <h1>Quest Ambiental</h1>
+    <Header
+      title="Quest Ambiental"
+      description="Uma abordagem lúdica sobre a importância da preservação do meio ambiente alagoano"
+    />
   );
 }

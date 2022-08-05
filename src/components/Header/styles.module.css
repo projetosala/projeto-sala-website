@@ -1,0 +1,39 @@
+.container{
+  width: 100vw;
+  height: 100vh;
+  background-image: var(--gradient-to-top), url('/images/background.png');  
+  background-size: cover;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.title{
+  max-width: 600px;
+  text-align: center;
+  font-size: var(--big-title-size);
+  font-family: var(--title-fonts);
+  color: var(--primary);
+  letter-spacing: 0.03em;
+  line-height: 130%;
+  font-weight: 700;
+  margin-bottom: 30px;
+  padding: 0 20px;
+}
+
+.description{
+  max-width: 600px;
+  text-align: center;
+  font-size: var(--subtitle-size);
+  font-family: var(--text-fonts);
+  color: var(--primary);
+  font-weight: 400;
+  padding: 0 20px;
+}
+
+.icon{
+  position: absolute;
+  display: flex;
+  bottom: 41px;
+}
