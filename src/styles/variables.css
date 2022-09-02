@@ -26,5 +26,5 @@ html {
   /* GRADIENT */
   --gradient-to-top: linear-gradient(180deg, rgba(30, 39, 48, 0.5) 0%, var(--background) 100%);
   --gradient-to-right: linear-gradient(90deg, var(--background) 0%, var(--background) 15.63%, rgba(30, 39, 48, 0) 100%);
-  --gradient-to-left: linear-gradient(90deg, rgba(30, 39, 48, 0) 0%, var(--background) 84.43%, var(--background) 100%);;
+  --gradient-to-left: linear-gradient(90deg, rgba(30, 39, 48, 0) 0%, var(--background) 84.43%, var(--background) 100%);
 }
