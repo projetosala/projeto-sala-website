@@ -12,6 +12,7 @@
 - [Submeter contribuição](#8-enviar-as-modificações-para-análise)
 - [Solicitar avaliação](#9-abra-um-pull-request-pr-para-os-mais-íntimos)
 - [O PR foi aprovado?](#10-o-pr-foi-aprovado)
+- [Ocorreu algum conflito e sua _branch_ não está atualizada?](#11-ocorreu-algum-conflito-e-sua-branch-não-está-atualizada)
 - :pencil: [Sugerir melhorias ou correções](#pencil-sugerir-melhorias-ou-correções)
 
 ---
@@ -109,6 +110,89 @@ git commit -m "tipo: mensagem"
 
 Verifique no arquivo [`conventions.md`](./conventions.md) o padrão de mensagens de _commit_ que você deve seguir.
 
+### Atenção!
+Não dê pequenos commits para uma mesma atividade, dividindo ela em pequenos passos, em vez disso reúna tudo em um único commit. Se você não se sentir seguro(a) e/ou prefere fazer pequenos commits, então use o `amend`:
+
+Após ter dado o commit com uma parte da sua feature:
+
+```bash
+git add .
+git commit -m "tipo: mensagem"
+```
+
+No segundo commit para adicionar mais atualizações, no lugar de dar mais um commit, utilize:
+
+```bash
+git add .
+git commit --amend --no-edit
+```
+Sucesso! Agora tudo que tu modificou foi adicionado ao seu commit (um único commit).
+Caso você tenha errado a mensagem do commit, ou queira alterá-la, basta **remover** o `--no-edit`, assim o comando será:
+
+```bash
+git commit --amend
+```
+
+Uma mensagem irá aparecer no seu terminal possibilitando a edição da mensagem de commit. Basta editar, salvar a alteração e fechar a aba aberta. 
+
+### Criei dois ou mais commits para a mesma atividade, e agora?
+
+[Vídeo: **Como usar o rebase**](https://user-images.githubusercontent.com/63798776/188469735-ad4a2d5a-38f2-4843-a349-0525740e5a87.webm)
+
+:bulb: _OBS.: nas pausas do vídeo (**0:22s** e **0:42s**), pressione as teclas `ctrl + o` e `enter` (salvar o arquivo), depois `ctrl + x` (fechar o editor)._
+
+Se você não utilizou o `amend` não tem problema você ainda conseguirá organizar o histórico através do `squash`. Ele adiciona seu commit no commit anterior permitindo a junção de seus commits em um só. Para isso basta seguir os comandos abaixo:
+
+```bash
+git rebase -i HEAD~2 
+
+# O número 2 aqui é apenas um exemplo. Esse número se refere a quantidade de commits que você deseja visualizar.
+```
+
+Após esse comando os commits aparecerão no terminal dessa forma:
+
+```
+pick e1410a9 feat: Criação do botão
+pick 30d2fe4 update: Correção da cor do botão
+
+# Rebase 35f2727..30d2fe4 onto 35f2727 (2 commands)
+#
+# Commands:
+# p, pick <commit> = use commit
+# r, reword <commit> = use commit, but edit the commit message
+# e, edit <commit> = use commit, but stop for amending
+# s, squash <commit> = use commit, but meld into previous commit
+# f, fixup [-C | -c] <commit> = like "squash" but keep only the previous
+#                    commit's log message, unless -C is used, in which case
+#                    keep only this commit's message; -c is same as -C but
+#                    opens the editor
+# x, exec <command> = run command (the rest of the line) using shell
+# b, break = stop here (continue rebase later with 'git rebase --continue')
+# d, drop <commit> = remove commit
+# l, label <label> = label current HEAD with a name
+# t, reset <label> = reset HEAD to a label
+# m, merge [-C <commit> | -c <commit>] <label> [# <oneline>]
+# .       create a merge commit using the original merge commit's
+# .       message (or the oneline, if no original merge commit was
+# .       specified); use -c <commit> to reword the commit message
+#
+# These lines can be re-ordered; they are executed from top to bottom.
+#
+# If you remove a line here THAT COMMIT WILL BE LOST.
+#
+# However, if you remove everything, the rebase will be aborted.
+#
+```
+Como você pode observar, o terminal trás toda a informação de como agir daqui em diante, mas basicamente a ordem de commits do mais antigo ao mais atual é de cima pra baixo. Logo se fiz 2 commits e quero juntar em um só, basta adicionar squash no último commit, assim ele irá se juntar com o commit anterior, dessa forma:
+
+```
+pick e1410a9 feat: Criação do botão
+squash 30d2fe4 update: Correção da cor do botão
+
+[...]
+```
+Quando tu salvar essa alteração uma visualização para alteração da mensagem será exibida. Muita atenção nessa hora pois as mensagens dos dois commits irão aparecer, sendo necessário apagar as mensagem que você não deseja deixando apenas a mensagem que tu quer. Após essa alteração dê um `git push --force` e pronto!
+
 ## 8. Enviar as modificações para análise
 Após fazer e registrar as alterações, é necessário enviá-las para o repositório remoto. Assim, todos poderão ver a sua contribuição.
 
@@ -159,6 +243,30 @@ git pull origin develop
 # Envie as suas modificações:
 git push origin develop
 ```
+
+## 11. Ocorreu algum conflito e sua _branch_ não está atualizada?
+
+[Vídeo: **Como resolver conflitos**](https://user-images.githubusercontent.com/63798776/188469743-7bfa4f21-e4d7-4c7a-a430-7b595fc4598d.webm)
+
+Para manter sua _branch_ atualizada com o histórico de commits intactos basta utilizar o `rebase`. Este comando atualiza a sua _branch_ com os commits da `develop` (nossa _branch_ base para desenvolvimento) e adiciona o seu commit no histórico.
+
+```bash
+git fetch origin develop:develop && git rebase develop
+```
+Após esse comando o surgimento de conflitos podem acontecer. Quando eles parecerem resolva os conflitos e após a resolução deles execute os seguintes comandos:
+
+```bash
+git add .
+git rebase --continue
+```
+
+Para subir as atualizações execute:
+
+```bash
+git push origin HEAD --force
+```
+
+Pronto! Com os comandos acima, tu conseguirá manter sua _branch_ sempre atualizada.
 
 ## :pencil: Sugerir melhorias ou correções
 Caso você ainda não sinta segurança em contribuir com código ou encontrou um problema/situação de melhoria e quer reportar, crie uma [_issue_](https://github.com/QuestAmbiental/quest-ambiental-website/issues/new).
