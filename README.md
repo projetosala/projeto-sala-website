@@ -8,21 +8,15 @@ O design do site foi criado no Figma. Para acessar o protótipo, [clique aqui](h
 
 ![Design](https://user-images.githubusercontent.com/63798776/182034441-79c018d4-ccbb-45be-b306-1311de042d04.png)
 
-## :warning: Pré-Requisitos
-> Antes de começar, tenha certeza que as ferramentas a seguir estão instaladas na sua máquina
-- [Git](https://git-scm.com/downloads)
-- [NodeJS](https://nodejs.org/en/)
+## :wrench: Ambiente de Desenvolvimento
+Para que todos tenham o ambiente de desenvolvimento o mais parecido possível e evitar problemas, certifique-se de ter as ferramentas acima com as seguintes versões:
 
-Para verificar, você pode executar os comandos abaixo no terminal:
+| Ferramenta | Versão |
+| --- | --- |
+| Git | A mais recente |
+| NodeJS | v16.17.0 |
 
-```bash
-git --version
-
-node --version
-
-# Se aparecer as versões do Git e do NodeJS, está tudo certo.
-# Senão, realize a instalação do que estiver faltando.
-```
+Para instalar as devidas versões, siga o passo a passo do arquivo [`dev-environment.md`](./.github/doc/dev-environment.md).
 
 ## :compass: Guia de Instalação
 > Com as ferramentas devidamente instaladas, execute os comandos abaixo
