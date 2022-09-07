@@ -8,21 +8,15 @@ O design do site foi criado no Figma. Para acessar o protótipo, [clique aqui](h
 
 ![Design](https://user-images.githubusercontent.com/63798776/182034441-79c018d4-ccbb-45be-b306-1311de042d04.png)
 
-## :warning: Pré-Requisitos
-> Antes de começar, tenha certeza que as ferramentas a seguir estão instaladas na sua máquina
-- [Git](https://git-scm.com/downloads)
-- [NodeJS](https://nodejs.org/en/)
+## :wrench: Ambiente de Desenvolvimento
+Para que todos tenham o ambiente de desenvolvimento o mais parecido possível e evitar problemas, certifique-se de ter as ferramentas acima com as seguintes versões:
 
-Para verificar, você pode executar os comandos abaixo no terminal:
+| Ferramenta | Versão |
+| --- | --- |
+| Git | A mais recente |
+| NodeJS | v16.17.0 |
 
-```bash
-git --version
-
-node --version
-
-# Se aparecer as versões do Git e do NodeJS, está tudo certo.
-# Senão, realize a instalação do que estiver faltando.
-```
+Para instalar as devidas versões, siga o passo a passo do arquivo [`dev-environment.md`](./.github/doc/dev-environment.md).
 
 ## :compass: Guia de Instalação
 > Com as ferramentas devidamente instaladas, execute os comandos abaixo
@@ -42,7 +36,31 @@ cd quest-ambiental-website
 npm install
 ```
 
-### **4. Executar a aplicação**
+### **4. Criar arquivo de variáveis de ambiente**
+Crie um arquivo `.env.local` na raiz do projeto com o seguinte conteúdo:
+
+```env
+# Dados do Firebase
+API_KEY = 
+AUTH_DOMAIN = 
+PROJECT_ID = 
+STORAGE_BUCKET = 
+MESSAGING_SENDER_ID = 
+APP_ID = 
+MEASUREMENT_ID = 
+```
+
+Para obter os dados do Firebase, siga esse passo a passo:
+
+1. Acesse o projeto no [Console do Firebase](https://console.firebase.google.com/project/quest-ambiental)
+2. Acesse as configurações do aplicativo (clique na engrenagem):
+
+![imagem](https://user-images.githubusercontent.com/63798776/188765891-e1897c09-7bc2-4954-8cde-89f935719370.png)
+
+3. Os dados estarão na seção "**Configuração do SDK**", na variável `firebaseConfig`
+4. Insira os dados nas devidas variáveis do arquivo `.env.local`
+
+### **5. Executar a aplicação**
 ```bash
 npm run dev
 ```
