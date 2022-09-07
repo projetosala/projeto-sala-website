@@ -1,0 +1,25 @@
+.container {
+  background: transparent;
+  color: var(--primary);
+  border-radius: 8px;
+  border: 2px solid var(--primary);
+  font-family: var(--text-fonts);
+  font-size: var(--text-small-size);
+  font-weight: 600;
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 20px;
+  text-transform: uppercase;
+  transition: all 0.3s;
+}
+
+.container * {
+  color: var(--primary);
+}
+
+.container:hover {
+  color: var(--primary-hover);
+  border-color: var(--primary-hover);
+}
