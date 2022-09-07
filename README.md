@@ -36,7 +36,31 @@ cd quest-ambiental-website
 npm install
 ```
 
-### **4. Executar a aplicação**
+### **4. Criar arquivo de variáveis de ambiente**
+Crie um arquivo `.env.local` na raiz do projeto com o seguinte conteúdo:
+
+```env
+# Dados do Firebase
+API_KEY = 
+AUTH_DOMAIN = 
+PROJECT_ID = 
+STORAGE_BUCKET = 
+MESSAGING_SENDER_ID = 
+APP_ID = 
+MEASUREMENT_ID = 
+```
+
+Para obter os dados do Firebase, siga esse passo a passo:
+
+1. Acesse o projeto no [Console do Firebase](https://console.firebase.google.com/project/quest-ambiental)
+2. Acesse as configurações do aplicativo (clique na engrenagem):
+
+![imagem](https://user-images.githubusercontent.com/63798776/188765891-e1897c09-7bc2-4954-8cde-89f935719370.png)
+
+3. Os dados estarão na seção "**Configuração do SDK**", na variável `firebaseConfig`
+4. Insira os dados nas devidas variáveis do arquivo `.env.local`
+
+### **5. Executar a aplicação**
 ```bash
 npm run dev
 ```
