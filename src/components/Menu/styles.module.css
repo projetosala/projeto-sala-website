@@ -1,0 +1,159 @@
+.menu {
+  width: calc(100% - 50px);
+  top: 40px;
+  left: 25px;
+  padding: 1em 5%;
+  background-color: var(--section-medium);
+  border-radius: 8px;
+  box-shadow: 0px 2px 25px rgba(11, 18, 25, 0.5);
+  gap: 102px;
+  display: flex;
+  position: fixed;
+  justify-content: center;
+}
+
+.list,
+.content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.link {
+  display: flex;
+  justify-content: space-between;
+}
+
+.logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo2 {
+  display: none;
+}
+
+.image {
+  width: 35px;
+  height: 35px;
+  border-radius: 8px;
+}
+
+.link a {
+  display: block;
+  padding: 5px 15px;
+  color: var(--primary);
+  font-family: var(--title-fonts);
+  font-style: normal;
+  font-weight: 700;
+  line-height: 20px;
+  letter-spacing: 0.03em;
+  font-size: var(--text-size);
+  text-align: left;
+  text-transform: uppercase;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
+
+.text {
+  display: none;
+}
+
+.dashes {
+  display: none;
+}
+
+.x {
+  display: none;
+}
+
+@media screen and (max-width: 650px) {
+  .menu {
+    padding: .9em 5%;
+    top: 25px;
+    border-radius: 8px;
+  }
+
+  .image {
+    width: 50px;
+    height: 50px;
+    border-radius: 8px;
+  }
+
+  .text {
+    display: block;
+    width: 83px;
+    height: 44px;
+    font-family: var(--title-fonts);
+    font-style: normal;
+    font-weight: 700;
+    font-size: var(--text-size);
+    line-height: 22px;
+    padding-left: 15px;
+    letter-spacing: 0.03em;
+    color: var(--primary);
+  }
+
+  .dashes {
+    display: flex;
+    cursor: pointer;
+    padding: 12px;
+  }
+
+  .x {
+    display: none;
+    cursor: pointer;
+    padding: 12px;
+  }
+
+  .logo2 {
+    display: flex;
+  }
+
+  .logo {
+    display: none;
+  }
+
+  .list {
+    display: none;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+    position: absolute;
+    width: 100%;
+    padding: .9em 0px;
+    top: 80px;
+    right: 0px;
+    background-color: var(--section-medium);
+  }
+
+  .active .list {
+    display: block;
+    padding: 0px;
+  }
+
+  .active .x {
+    display: block;
+  }
+
+  .active .dashes {
+    display: none;
+  }
+
+  .link a {
+    width: 100%;
+    padding: 20px;
+    border-bottom: var(--light-border);
+  }
+
+  .link:last-child a {
+    border-bottom: none;
+  }
+
+  .link:first-child a {
+    border-top: 1px solid var(--white);
+  }
+
+}
