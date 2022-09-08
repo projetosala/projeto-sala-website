@@ -1,0 +1,18 @@
+.container {
+  width: 40px;
+  height: 40px;
+  border-radius: 8px;
+  background: var(--primary);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.3s;
+}
+
+.container * {
+  color: var(--background);
+}
+
+.container:hover {
+  background: var(--primary-hover);
+}

@@ -1,0 +1,23 @@
+.container {
+  width: 40px;
+  height: 40px;
+  border-radius: 5px;
+  border: 2px solid transparent;
+  background: var(--section-light);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.3s;
+}
+
+.container * {
+  color: var(--text-secondary);
+}
+
+.container:hover {
+  border-color: var(--primary);
+}
+
+.container:hover * {
+  color: var(--primary);
+}
