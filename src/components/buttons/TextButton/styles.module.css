@@ -1,0 +1,14 @@
+.container {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.container * {
+  color: var(--primary);
+}
+
+.text {
+  font-size: var(--text-small-size);
+  text-align: left;
+}

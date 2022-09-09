@@ -1,0 +1,25 @@
+.container * {
+  font-size: var(--text-tiny-size);
+  color: var(--text-secondary);
+}
+
+.divider {
+  color: var(--text-secondary);
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+
+@media (max-width: 650px) {
+  .container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .divider {
+    display: none;
+  }
+}
