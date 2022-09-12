@@ -1,7 +1,7 @@
 ---
 name: Problema
 about: Reportar um problema que está acontecendo na aplicação
-title: "[BUG] "
+title: ''
 labels: bug
 assignees: ''
 

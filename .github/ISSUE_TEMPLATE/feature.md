@@ -28,7 +28,7 @@ assignees: ''
 - [ ] A _branch_ da funcionalidade está atualizada com a versão mais recente do repositório (com base na `develop`)
 - [ ] O nome da _branch_ está seguindo o padrão do Git Flow (`feature/...`)
 - [ ] Foram alterados, adicionados ou removidos apenas arquivos e pastas que dizem respeito à funcionalidade
-- [ ] As mensagens de _commit_ dizem claramente o que foi realizado, em inglês, seguindo o padrão `tipo: mensagem`
+- [ ] As mensagens de _commit_ dizem claramente o que foi realizado seguindo o padrão `tipo: mensagem`
 - [ ] Os arquivos seguem as exigências do ESLint
 - [ ] A funcionalidade mantém a responsividade da aplicação (está adaptada à todos os tamanhos de tela)
 - [ ] O código está limpo e organizado, sem comentários desnecessários, `console.log` ou qualquer outro tipo de trecho de código dispensável
