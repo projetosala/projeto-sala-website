@@ -13,5 +13,9 @@ export default function PrimaryButton({ title, onClick, Icon }) {
 PrimaryButton.propTypes = {
   title: PropTypes.string.isRequired,
   onClick: PropTypes.func.isRequired,
-  Icon: PropTypes.object.isRequired,
+  Icon: PropTypes.object,
 };
+
+PrimaryButton.defaultProps = {
+  Icon: null
+}

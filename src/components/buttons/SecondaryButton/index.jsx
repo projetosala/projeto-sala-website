@@ -13,5 +13,9 @@ export default function SecondaryButton({ title, onClick, Icon }) {
 SecondaryButton.propTypes = {
   title: PropTypes.string.isRequired,
   onClick: PropTypes.func.isRequired,
-  Icon: PropTypes.object.isRequired,
+  Icon: PropTypes.object,
 };
+
+SecondaryButton.defaultProps = {
+  Icon: null
+}
