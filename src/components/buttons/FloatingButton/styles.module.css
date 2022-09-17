@@ -1,0 +1,21 @@
+.button {
+  background: var(--primary);
+  width: 45px;
+  height: 45px;
+  border-radius: 100px;
+  display: flex;
+  align-items: center;
+  right: 25px;
+  bottom: 25px;
+  position: fixed;
+  justify-content: center;
+  transition: all 0.3s;
+}
+
+.button:hover {
+  background: var(--primary-hover);
+}
+
+.button * {
+  color: var(--background);
+}
