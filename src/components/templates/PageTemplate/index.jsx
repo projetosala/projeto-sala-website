@@ -4,12 +4,13 @@ import Header from '../../Header';
 import Footer from '../../Footer';
 import FloatingButton from '../../buttons/FloatingButton';
 
-export default function PageTemplate({ title, description }) {
+export default function PageTemplate({ title, description, children }) {
   return (
     <>
       <Header title={title} description={description} />
+      {children}
+      <FloatingButton onClick={() => { }} />
       <Footer />
-      <FloatingButton />
     </>
   );
 }
@@ -17,4 +18,9 @@ export default function PageTemplate({ title, description }) {
 PageTemplate.propTypes = {
   title: PropTypes.string.isRequired,
   description: PropTypes.string.isRequired,
+  children: PropTypes.element,
+};
+
+PageTemplate.defaultProps = {
+  children: null,
 };
