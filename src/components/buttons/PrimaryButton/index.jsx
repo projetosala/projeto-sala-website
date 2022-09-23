@@ -17,5 +17,5 @@ PrimaryButton.propTypes = {
 };
 
 PrimaryButton.defaultProps = {
-  Icon: null
-}
+  Icon: null,
+};

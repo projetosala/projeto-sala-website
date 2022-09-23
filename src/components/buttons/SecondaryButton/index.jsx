@@ -17,5 +17,5 @@ SecondaryButton.propTypes = {
 };
 
 SecondaryButton.defaultProps = {
-  Icon: null
-}
+  Icon: null,
+};
