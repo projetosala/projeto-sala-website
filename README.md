@@ -1,5 +1,4 @@
-# Quest Ambiental
-Repositório de código do site Quest Ambiental.
+# Projeto S.A.L.A
 
 Caso queira contribuir com novas funcionalidades, melhorias e/ou correções no projeto, siga os passos do arquivo [CONTRIBUTING.md](./.github/doc/CONTRIBUTING.md).
 
@@ -23,12 +22,12 @@ Para instalar as devidas versões, siga o passo a passo do arquivo [`dev-environ
 
 ### **1. Clonar repositório**
 ```bash
-git clone https://github.com/QuestAmbiental/quest-ambiental-website.git
+git clone https://github.com/projetosala/projeto-sala-website.git
 ```
 
 ### **2. Entrar na pasta do projeto**
 ```bash
-cd quest-ambiental-website
+cd projeto-sala-website
 ```
 
 ### **3. Instalar as dependências**
@@ -49,13 +48,14 @@ MESSAGING_SENDER_ID =
 APP_ID = 
 MEASUREMENT_ID = 
 ```
+>Obs.: Você pode utilizar como base o arquivo .env.local-example
 
 Para obter os dados do Firebase, siga esse passo a passo:
 
-1. Acesse o projeto no [Console do Firebase](https://console.firebase.google.com/project/quest-ambiental)
+1. Acesse o projeto no [Console do Firebase](https://console.firebase.google.com/project/projetosalabox/)
 2. Acesse as configurações do aplicativo (clique na engrenagem):
 
-![imagem](https://user-images.githubusercontent.com/63798776/188765891-e1897c09-7bc2-4954-8cde-89f935719370.png)
+![imagem](https://user-images.githubusercontent.com/40719464/192124820-c05fd3ee-e716-470d-a665-7b5a39948cc5.png)
 
 3. Os dados estarão na seção "**Configuração do SDK**", na variável `firebaseConfig`
 4. Insira os dados nas devidas variáveis do arquivo `.env.local`

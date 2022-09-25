@@ -23,7 +23,7 @@ export default function Menu() {
         <nav className={styles.logo2}>
           <img
             src="/images/logo.png"
-            alt="Logo do Quest Ambiental: mapa antigo com as letras QA no centro"
+            alt="Logo do Projeto SALA: mapa antigo com as letras QA no centro"
             className={styles.image}
           />
           <p className={styles.text}>
@@ -44,7 +44,7 @@ export default function Menu() {
           <li className={styles.logo}>
             <img
               src="/images/logo.png"
-              alt="Logo do Quest Ambiental: mapa antigo com as letras QA no centro"
+              alt="Logo do Projeto SALA: mapa antigo com as letras QA no centro"
               className={styles.image}
             />
           </li>
