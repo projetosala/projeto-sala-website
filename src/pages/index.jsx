@@ -1,5 +1,5 @@
 import PropTypes from 'prop-types';
-import CtaSection from '../components/CtaSection';
+import CtaSection from '../components/base/CtaSection';
 import PageTemplate from '../components/templates/PageTemplate';
 import getPageContent from '../controllers/pageContentController';
 

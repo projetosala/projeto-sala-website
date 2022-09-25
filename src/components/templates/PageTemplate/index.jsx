@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import Header from '../../Header';
-import Footer from '../../Footer';
+import Header from '../../base/Header';
+import Footer from '../../base/Footer';
 import FloatingButton from '../../buttons/FloatingButton';
 
 export default function PageTemplate({ title, description, children }) {
