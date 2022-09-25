@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import { useRouter } from 'next/router';
 import { ArrowRight, ExternalLink } from 'react-feather';
 import SectionHeader from '../SectionHeader';
-import PrimaryButton from '../buttons/PrimaryButton';
+import PrimaryButton from '../../buttons/PrimaryButton';
 import styles from './styles.module.css';
 
 export default function CtaSection({
