@@ -1,5 +1,5 @@
 # Como contribuir
-> Siga os passos abaixo para contribuir com código ou sugestões de melhorias/correções no site do Quest Ambiental
+> Siga os passos abaixo para contribuir com código ou sugestões de melhorias/correções no site do Projeto S.A.L.A
 
 ## :open_file_folder: Conteúdo:
 - [Pré-Requisitos](#1-pré-requisitos)
@@ -58,7 +58,7 @@ Release branches? [release/]
 Hotfix branches? [hotfix/] 
 Support branches? [support/] 
 Version tag prefix? [] 
-Hooks and filters directory? [/sua-maquina/quest-ambiental-website/.git/hooks]
+Hooks and filters directory? [/sua-maquina/projeto-sala-website/.git/hooks]
 
 # Se as recomendações forem como essas (ex.: "[main]", "[develop]"...), basta apertar ENTER.
 ```
@@ -269,7 +269,7 @@ git push origin HEAD --force
 Pronto! Com os comandos acima, tu conseguirá manter sua _branch_ sempre atualizada.
 
 ## :pencil: Sugerir melhorias ou correções
-Caso você ainda não sinta segurança em contribuir com código ou encontrou um problema/situação de melhoria e quer reportar, crie uma [_issue_](https://github.com/QuestAmbiental/quest-ambiental-website/issues/new).
+Caso você ainda não sinta segurança em contribuir com código ou encontrou um problema/situação de melhoria e quer reportar, crie uma [_issue_](https://github.com/projetosala/projeto-sala-website/issues/new).
 
 Utilize [este guia](https://docs.github.com/pt/issues/tracking-your-work-with-issues/creating-an-issue) para reportar um problema ou indicar uma melhoria através de _issues_.
 
