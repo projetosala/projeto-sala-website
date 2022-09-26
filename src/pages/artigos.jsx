@@ -1,5 +1,6 @@
 import PropTypes from 'prop-types';
 import Head from 'next/head';
+// eslint-disable-next-line import/no-extraneous-dependencies
 import { useCallback } from 'react';
 import { ExternalLink } from 'react-feather';
 import BlogArticleCard from '../components/cards/BlogArticleCard';

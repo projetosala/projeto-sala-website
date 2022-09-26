@@ -1,4 +1,5 @@
 import Link from 'next/link';
+// eslint-disable-next-line import/no-extraneous-dependencies
 import React, { useState } from 'react';
 import { Menu as MenuIcon, X } from 'react-feather';
 import styles from './styles.module.css';
