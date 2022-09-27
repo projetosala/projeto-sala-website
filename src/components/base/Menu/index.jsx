@@ -52,7 +52,7 @@ export default function Menu() {
             <Link href="/o-projeto">O PROJETO</Link>
           </li>
           <li className={styles.link}>
-            <Link href="/o-jogo">O JOGO</Link>
+            <Link href="/gamificacao">GAMIFICAÇÃO</Link>
           </li>
         </ul>
         <button type="button" className={styles.dashes} onClick={toggleMenu}>
