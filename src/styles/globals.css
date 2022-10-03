@@ -21,3 +21,7 @@ html {
 }
 
 body { background-color: var(--background); }
+
+input {
+  min-width: 0;
+}
