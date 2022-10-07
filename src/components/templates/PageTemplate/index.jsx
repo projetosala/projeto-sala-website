@@ -18,7 +18,7 @@ export default function PageTemplate({ title, description, children }) {
 PageTemplate.propTypes = {
   title: PropTypes.string.isRequired,
   description: PropTypes.string.isRequired,
-  children: PropTypes.element,
+  children: PropTypes.oneOfType([PropTypes.element, PropTypes.array]),
 };
 
 PageTemplate.defaultProps = {
