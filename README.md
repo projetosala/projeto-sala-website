@@ -36,21 +36,9 @@ npm install
 ```
 
 ### **4. Criar arquivo de variáveis de ambiente**
-Crie um arquivo `.env.local` na raiz do projeto com o seguinte conteúdo:
+Crie uma cópia do arquivo [`.env.example`](./.env.example) na raiz do projeto com o nome `.env.local` e preencha com os devidos valores.
 
-```env
-# Dados do Firebase
-API_KEY = 
-AUTH_DOMAIN = 
-PROJECT_ID = 
-STORAGE_BUCKET = 
-MESSAGING_SENDER_ID = 
-APP_ID = 
-MEASUREMENT_ID = 
-```
->Obs.: Você pode utilizar como base o arquivo .env.local-example
-
-Para obter os dados do Firebase, siga esse passo a passo:
+#### Para obter os dados do Firebase, siga esse passo a passo:
 
 1. Acesse o projeto no [Console do Firebase](https://console.firebase.google.com/project/projetosalabox/)
 2. Acesse as configurações do aplicativo (clique na engrenagem):
@@ -59,6 +47,11 @@ Para obter os dados do Firebase, siga esse passo a passo:
 
 3. Os dados estarão na seção "**Configuração do SDK**", na variável `firebaseConfig`
 4. Insira os dados nas devidas variáveis do arquivo `.env.local`
+
+#### Os dados do Blogger podem ser adquiridos seguindo estes tutoriais:
+
+- [Chave de API](https://developers.google.com/blogger/docs/3.0/using#APIKey)
+- [Blog ID](https://subinsb.com/how-to-find-blogger-blog-id/)
 
 ### **5. Executar a aplicação**
 ```bash
