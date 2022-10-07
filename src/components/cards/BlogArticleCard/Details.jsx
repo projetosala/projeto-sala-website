@@ -10,8 +10,13 @@ export default function Details({ date, tags }) {
   return (
     <div className={styles.container}>
       <p className={styles.details}>{date}</p>
-      <span className={styles.divider}> | </span>
-      <p className={styles.details}>{getFormatedTags()}</p>
+
+      {tags.length > 0 && (
+        <>
+          <span className={styles.divider}> | </span>
+          <p className={styles.details}>{getFormatedTags()}</p>
+        </>
+      )}
     </div>
   );
 }
