@@ -1,0 +1,31 @@
+.item {
+  max-width: 960px;
+  max-height: 400px;
+  /* padding: 80px 100px; */
+  flex: none;
+  order: 1;
+  flex-grow: 1;
+  box-shadow: 0px 4px 20px 5px rgba(0, 0, 0, 0.25);
+  border-radius: 15px;
+}
+
+.image {
+  vertical-align: middle;
+  width: auto;
+  height: 100%;
+  border-radius: 15px;
+  /* position: absolute; */
+}
+
+.legend {
+  /* position: relative; */
+}
+
+.year {
+  /* position: relative; */
+}
+
+.span {
+  display: flex;
+  justify-content: space-between;
+}
