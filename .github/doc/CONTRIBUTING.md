@@ -4,15 +4,14 @@
 ## :open_file_folder: Conteúdo:
 - [Pré-Requisitos](#1-pré-requisitos)
 - [Instalação](#2-siga-os-passos-do-guia-de-instalação)
-- [Organização de branches](#3-organize-as-branches)
-- [Sincronização](#4-antes-de-tudo-sincronize-com-o-repositório-remoto)
-- [Criar uma _branch_](#5-crie-uma-branch)
-- [Realizar as alterações](#6-realize-as-alterações-necessárias)
-- [Registrar as alterações](#7-registre-as-alterações-realizadas)
-- [Submeter contribuição](#8-enviar-as-modificações-para-análise)
-- [Solicitar avaliação](#9-abra-um-pull-request-pr-para-os-mais-íntimos)
-- [O PR foi aprovado?](#10-o-pr-foi-aprovado)
-- [Ocorreu algum conflito e sua _branch_ não está atualizada?](#11-ocorreu-algum-conflito-e-sua-branch-não-está-atualizada)
+- [Sincronização](#3-antes-de-tudo-sincronize-com-o-repositório-remoto)
+- [Criar uma _branch_](#4-inicie-a-branch-de-funcionalidade)
+- [Realizar as alterações](#5-realize-as-alterações-necessárias)
+- [Registrar as alterações](#6-registre-as-alterações-realizadas)
+- [Submeter contribuição](#7-enviar-as-modificações-para-análise)
+- [Solicitar avaliação](#8-abra-um-pull-request-pr-para-os-mais-íntimos)
+- [O PR foi aprovado?](#9-o-pr-foi-aprovado)
+- [Ocorreu algum conflito e sua _branch_ não está atualizada?](#10-ocorreu-algum-conflito-e-sua-branch-não-está-atualizada)
 - :pencil: [Sugerir melhorias ou correções](#pencil-sugerir-melhorias-ou-correções)
 
 ---
@@ -26,75 +25,34 @@
 Com isso, você terá tudo o que é necessário para executar a aplicação.
 
 Após seguir todos os passos do guia, execute as seguintes instruções:
-
-## 3. Organize as _branches_
-O seu ambiente de desenvolvimento deve possuir a seguinte estrutura de _branches_:
-
-```bash
-# git branch
-  develop
-  main
-* feature/sua-branch
-```
-
-No momento em que você clonar o repositório, apenas a _branch_ `main` estará disponível. Para atualizar para a estrutura, execute:
-
-```bash
-git flow init
-```
-
-Após executar o comando, vão surgir algumas perguntas. O seu terminal deverá ser parecido com isso:
-
-```bash
-Which branch should be used for bringing forth production releases?
-   - main
-Branch name for production releases: [main] 
-Branch name for "next release" development: [develop] 
-
-How to name your supporting branch prefixes?
-Feature branches? [feature/] 
-Bugfix branches? [bugfix/] 
-Release branches? [release/] 
-Hotfix branches? [hotfix/] 
-Support branches? [support/] 
-Version tag prefix? [] 
-Hooks and filters directory? [/sua-maquina/projeto-sala-website/.git/hooks]
-
-# Se as recomendações forem como essas (ex.: "[main]", "[develop]"...), basta apertar ENTER.
-```
-
-Após isso, você terá a seguinte estrutura:
-
-```bash
-# git branch
-* develop
-  main
-```
-
-Agora é só seguir os próximos passos do guia ;)
-
-## 4. Antes de tudo, sincronize com o repositório remoto
+## 3. Antes de tudo, sincronize com o repositório remoto
 Para evitar conflitos com o código principal que está no repositório remoto do GitHub, **SEMPRE** execute o comando abaixo antes de realizar qualquer modificação:
 
+Se você estiver na branch principal (`main`), rode o comando:
+```bash
+git checkout develop
+```
+Após entrar na branch de desenvolvimento (`develop`), execute:
 ```bash
 git pull origin develop
 ```
 
 Assim, você evitará muitos problemas e todo mundo fica feliz ;)
 
-## 5. Inicie a _branch_ de funcionalidade
+## 4. Inicie a _branch_ de funcionalidade
 > Não sabe o que é uma _branch_? Não tem problema, [clique aqui](https://git-scm.com/book/pt-br/v2/Branches-no-Git-Branches-em-poucas-palavras) para entender.
 
 ```bash
-git flow feature start <nome-da-branch>
+git checkout -b feature/<nome-da-branch>
 
+# feature é apenas um prefixo que adotamos para as nossas branches. Esse prefixo não é padrão do git
 # Troque <nome-da-branch> pelo nome da funcionalidade que você implementará (ex.: header-component)
 ```
 
-## 6. Realize as alterações necessárias
+## 5. Realize as alterações necessárias
 Agora você pode modificar os arquivos existentes no projeto ou até criar novos arquivos e pastas, caso seja necessário.
 
-## 7. Registre as alterações realizadas
+## 6. Registre as alterações realizadas
 Após alterar o código, adicione as alterações ao Git com os seguintes comandos:
 
 ```bash
@@ -183,7 +141,7 @@ pick 30d2fe4 update: Correção da cor do botão
 # However, if you remove everything, the rebase will be aborted.
 #
 ```
-Como você pode observar, o terminal trás toda a informação de como agir daqui em diante, mas basicamente a ordem de commits do mais antigo ao mais atual é de cima pra baixo. Logo se fiz 2 commits e quero juntar em um só, basta adicionar squash no último commit, assim ele irá se juntar com o commit anterior, dessa forma:
+Como você pode observar, o terminal trás toda a informação de como agir daqui em diante, mas basicamente a ordem de commits do mais antigo ao mais atual é de cima para baixo. Logo se fiz 2 commits e quero juntar em um só, basta adicionar squash no último commit, assim ele irá se juntar com o commit anterior, dessa forma:
 
 ```
 pick e1410a9 feat: Criação do botão
@@ -191,20 +149,20 @@ squash 30d2fe4 update: Correção da cor do botão
 
 [...]
 ```
-Quando tu salvar essa alteração uma visualização para alteração da mensagem será exibida. Muita atenção nessa hora pois as mensagens dos dois commits irão aparecer, sendo necessário apagar as mensagem que você não deseja deixando apenas a mensagem que tu quer. Após essa alteração dê um `git push --force` e pronto!
+Quando tu salvar essa alteração uma visualização para alteração da mensagem será exibida. Muita atenção nessa hora pois as mensagens dos dois commits irão aparecer, sendo necessário apagar as mensagens que você não deseja deixando apenas a mensagem que tu quer. Após essa alteração dê um `git push --force` e pronto!
 
-## 8. Enviar as modificações para análise
+## 7. Enviar as modificações para análise
 Após fazer e registrar as alterações, é necessário enviá-las para o repositório remoto. Assim, todos poderão ver a sua contribuição.
 
 Para enviar suas modificações, execute o seguinte comando:
 
 ```bash
-git push origin <nome-da-branch>
+git push origin feature/<nome-da-branch>
 
-# Troque <nome-da-branch> pelo nome da branch que você criou no passo 5 deste guia
+# Troque <nome-da-branch> pelo nome da branch que você criou no passo 4 deste guia
 ```
 
-## 9. Abra um _Pull Request_ (PR para os mais íntimos)
+## 8. Abra um _Pull Request_ (PR para os mais íntimos)
 > Não sabe o que é um _Pull Request_? [Clique aqui](https://docs.github.com/pt/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/about-pull-requests) para entender.
 
 Você pode seguir [este guia](https://docs.github.com/pt/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/creating-a-pull-request) para criar um _pull request_.
@@ -219,32 +177,14 @@ Verifique no arquivo [`conventions.md`](./conventions.md) o tipo que você deve 
 
 Após a criação do PR, espere alguém analisar o seu código e indicar o que deve ser feito.
 
-Caso seja exigida alguma alteração, você pode realizar as correções, seguindo do [passo 6](#6-realize-as-alterações-necessárias) deste guia em diante.
+Caso seja exigida alguma alteração, você pode realizar as correções, seguindo do [passo 5](#5-realize-as-alterações-necessárias) deste guia em diante.
 
-## 10. O PR foi aprovado?
+## 9. O PR foi aprovado?
 > Só siga esse passo se tiver certeza de que o PR foi aprovado. Caso tenha dúvida, pergunte ;)
 
-Se o PR foi aprovado, você pode fechar a _branch_ que criou no [passo 5](#5-inicie-a-branch-de-funcionalidade) e enviar as alterações realizadas para a _branch_ de desenvolvimento.
+Se o PR foi aprovado, você pode enviar as alterações realizadas para a _branch_ de desenvolvimento (develop) através do botão de `merge` do seu PR. Após o merge, você pode excluir a _branch_ que criou no [passo 4](#4-inicie-a-branch-de-funcionalidade).
 
-Para fazer isso, execute o comando abaixo:
-
-```bash
-git flow feature finish <nome-da-branch>
-
-# Troque <nome-da-branch> pelo nome da branch que você criou no passo 5 deste guia
-```
-
-Agora, envie a _branch_ de desenvolvimento para o repositório remoto:
-
-```bash
-# Baixe a versão atualizada da branch de desenvolvimento:
-git pull origin develop
-
-# Envie as suas modificações:
-git push origin develop
-```
-
-## 11. Ocorreu algum conflito e sua _branch_ não está atualizada?
+## 10. Ocorreu algum conflito e sua _branch_ não está atualizada?
 
 [Vídeo: **Como resolver conflitos**](https://user-images.githubusercontent.com/63798776/188469743-7bfa4f21-e4d7-4c7a-a430-7b595fc4598d.webm)
 

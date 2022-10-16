@@ -1,6 +1,6 @@
 # Projeto S.A.L.A
 
-Caso queira contribuir com novas funcionalidades, melhorias e/ou correções no projeto, siga os passos do arquivo [CONTRIBUTING.md](./.github/doc/CONTRIBUTING.md).
+Caso queira contribuir com novas funcionalidades, melhorias e/ou correções no projeto, siga os passos do arquivo [CONTRIBUTING.md](./.github/doc/CONTRIBUTING.md) e dá uma conferida no nosso [Fluxo de Trabalho](./.github/doc/workflow.md).
 
 ## :art: Design
 O design do site foi criado no Figma. Para acessar o protótipo, [clique aqui](https://figma.com/file/F4AeiLaW8Yi7zr4eCuLtpX/Website).
@@ -36,7 +36,7 @@ npm install
 ```
 
 ### **4. Criar arquivo de variáveis de ambiente**
-Crie uma cópia do arquivo [`.env.example`](./.env.example) na raiz do projeto com o nome `.env.local` e preencha com os devidos valores.
+Crie uma cópia do arquivo [`.env.example`](./.env.example) na raiz do projeto com o nome `.env` e preencha com os devidos valores.
 
 #### Para obter os dados do Firebase, siga esse passo a passo:
 
@@ -46,7 +46,7 @@ Crie uma cópia do arquivo [`.env.example`](./.env.example) na raiz do projeto c
 ![imagem](https://user-images.githubusercontent.com/40719464/192124820-c05fd3ee-e716-470d-a665-7b5a39948cc5.png)
 
 3. Os dados estarão na seção "**Configuração do SDK**", na variável `firebaseConfig`
-4. Insira os dados nas devidas variáveis do arquivo `.env.local`
+4. Insira os dados nas devidas variáveis do arquivo `.env`
 
 #### Os dados do Blogger podem ser adquiridos seguindo estes tutoriais:
 
