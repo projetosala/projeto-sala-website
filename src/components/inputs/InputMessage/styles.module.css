@@ -1,0 +1,9 @@
+.input {
+  padding: 20px 25px;
+  width: 100%;
+  min-height: 100px;
+  max-height: 150px;
+  background: var(--section-medium);
+  border-radius: 8px;
+  resize: vertical;
+}
