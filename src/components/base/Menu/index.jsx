@@ -27,11 +27,11 @@ export default function Menu() {
             className={styles.image}
           />
           <p className={styles.text}>
-            Quest
+            Projeto
             {' '}
             <br />
             {' '}
-            Ambiental
+            S.A.L.A
           </p>
         </nav>
         <ul className={styles.list}>
