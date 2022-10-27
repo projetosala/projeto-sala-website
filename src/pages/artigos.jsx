@@ -64,7 +64,7 @@ export default function Articles({ posts }) {
 }
 
 export async function getStaticProps() {
-  const now = 0;
+  const now = 1;
   const oneWeekInSeconds = 604800;
   const posts = await getPosts();
   const whenRevalidate = posts ? oneWeekInSeconds : now;
