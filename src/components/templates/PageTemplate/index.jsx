@@ -1,15 +1,18 @@
-import React from 'react';
+import React, { useState } from 'react';
 import PropTypes from 'prop-types';
 import Header from '../../base/Header';
 import Footer from '../../base/Footer';
 import FloatingButton from '../../buttons/FloatingButton';
+import FeedbackPopup from '../../cards/FeedbackPopup';
 
 export default function PageTemplate({ title, description, children }) {
+  const [isFeedbackVisible, setIsFeedbackVisible] = useState(false);
   return (
     <>
       <Header title={title} description={description} />
       {children}
-      <FloatingButton onClick={() => { }} />
+      <FloatingButton onClick={() => setIsFeedbackVisible(true)} />
+      {isFeedbackVisible ? <FeedbackPopup onClose={() => setIsFeedbackVisible(false)} /> : null}
       <Footer />
     </>
   );
