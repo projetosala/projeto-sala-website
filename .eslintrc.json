@@ -20,7 +20,8 @@
   ],
   "rules": {
     "react/react-in-jsx-scope": "off",
-    "react/forbid-prop-types": 0,
-    "linebreak-style": 0
+    "react/forbid-prop-types": "off",
+    "linebreak-style": "off",
+    "react/jsx-no-bind": "off"
   }
 }
