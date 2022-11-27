@@ -59,9 +59,3 @@ npm run dev
 ```
 
 O site estará disponível em `http://localhost:3000`
-
----
-
-## :page_facing_up: Licença
-
-[BSD 3-Clause](./LICENSE).
