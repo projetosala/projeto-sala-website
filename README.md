@@ -48,10 +48,18 @@ Crie uma cópia do arquivo [`.env.example`](./.env.example) na raiz do projeto c
 3. Os dados estarão na seção "**Configuração do SDK**", na variável `firebaseConfig`
 4. Insira os dados nas devidas variáveis do arquivo `.env`
 
-#### Os dados do Blogger podem ser adquiridos seguindo estes tutoriais:
+#### Para obter a chave de API do Google, siga esse passo a passo:
 
-- [Chave de API](https://developers.google.com/blogger/docs/3.0/using#APIKey)
-- [Blog ID](https://subinsb.com/how-to-find-blogger-blog-id/)
+1. Acesse a [página de credenciais](https://console.cloud.google.com/apis/credentials)
+2. Selecione um projeto (ou crie, caso não possua)
+
+![imagem](https://user-images.githubusercontent.com/63798776/206915956-384d61bb-0f3f-43f7-a3fe-4c2c5da7e7a0.png)
+
+3. Clique em **CRIAR CREDENCIAIS** e selecione **Chave de API**
+
+![imagem](https://user-images.githubusercontent.com/63798776/206916094-0300a90c-251d-4753-8c08-975cb7b65948.png)
+
+4. Copie a credencial gerada e cole no arquivo `.env`
 
 ### **5. Executar a aplicação**
 ```bash
