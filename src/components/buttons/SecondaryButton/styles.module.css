@@ -5,7 +5,7 @@
   border: 2px solid var(--primary);
   font-family: var(--text-fonts);
   font-size: var(--text-small-size);
-  font-weight: 600;
+  font-weight: var(--semibold);
   display: flex;
   gap: 15px;
   justify-content: center;

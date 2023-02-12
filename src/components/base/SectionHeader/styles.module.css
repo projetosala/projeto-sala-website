@@ -1,19 +1,19 @@
 .container {
   padding: 40px 25px 20px;
 }
- 
+
 .title {
   margin-bottom: 5px;
   font-family: var(--title-fonts);
   color: var(--primary);
   font-size: var(--title-2-size);
-  font-weight: 700;
+  font-weight: var(--bold);
   line-height: 130%;
   letter-spacing: 0.03em;
   text-transform: uppercase;
 }
- 
-.content{
+
+.content {
   max-width: 1200px;
   margin: 0 auto;
 }
