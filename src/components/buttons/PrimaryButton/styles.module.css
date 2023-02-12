@@ -4,7 +4,7 @@
   border-radius: 8px;
   font-family: var(--text-fonts);
   font-size: var(--text-small-size);
-  font-weight: 700;
+  font-weight: var(--bold);
   display: flex;
   flex-direction: row;
   gap: 15px;

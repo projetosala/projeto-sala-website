@@ -48,7 +48,7 @@
   color: var(--primary);
   font-family: var(--title-fonts);
   font-style: normal;
-  font-weight: 700;
+  font-weight: var(--bold);
   line-height: 20px;
   letter-spacing: 0.03em;
   font-size: var(--text-size);
@@ -90,7 +90,7 @@
     height: 44px;
     font-family: var(--title-fonts);
     font-style: normal;
-    font-weight: 700;
+    font-weight: var(--bold);
     font-size: var(--text-size);
     line-height: 22px;
     padding-left: 15px;

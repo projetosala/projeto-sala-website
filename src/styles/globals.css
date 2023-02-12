@@ -7,20 +7,24 @@
   color: var(--white);
   font-family: var(--text-fonts);
   font-size: var(--text-size);
-  font-weight: 400;
+  font-weight: var(--regular);
   text-decoration: none;
   list-style: none;
   box-sizing: border-box;
 }
 
-button { cursor: pointer; }
+button {
+  cursor: pointer;
+}
 
-html { 
-  font-size: 10px; 
+html {
+  font-size: 10px;
   overflow-x: hidden;
 }
 
-body { background-color: var(--background); }
+body {
+  background-color: var(--background);
+}
 
 input {
   min-width: 0;

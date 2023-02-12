@@ -12,6 +12,11 @@ html {
   --text-small-size: 1.6rem;
   --text-tiny-size: 1.4rem;
 
+  /* FONT WEIGHT */
+  --regular: 400;
+  --semibold: 600;
+  --bold: 700;
+
   /* COLOR */
   --primary: #DAAE84;
   --text-secondary: #AEAEAE;
