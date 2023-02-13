@@ -36,7 +36,7 @@ function PageContent({ images, texts }) {
 }
 
 export async function getStaticProps() {
-  const now = 0;
+  const now = 1;
   const oneWeekInSeconds = 604800;
   let texts = null;
   let images = null;
