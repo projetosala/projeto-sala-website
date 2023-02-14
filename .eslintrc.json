@@ -22,6 +22,7 @@
     "react/react-in-jsx-scope": "off",
     "react/forbid-prop-types": "off",
     "linebreak-style": "off",
-    "react/jsx-no-bind": "off"
+    "react/jsx-no-bind": "off",
+    "no-console": "off"
   }
 }

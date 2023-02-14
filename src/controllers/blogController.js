@@ -12,7 +12,6 @@ export default async function getPosts() {
 
     return status === 200 ? data.items : null;
   } catch (error) {
-    // eslint-disable-next-line no-console
     console.error(error);
     return null;
   }
