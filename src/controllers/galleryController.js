@@ -16,7 +16,6 @@ export default async function getImages() {
 
     return images;
   } catch (error) {
-    // eslint-disable-next-line no-console
     console.error(error);
     return null;
   }

@@ -16,7 +16,6 @@ export default async function getParticipants() {
 
     return participants;
   } catch (error) {
-    // eslint-disable-next-line no-console
     console.error(error);
     return null;
   }

@@ -18,7 +18,6 @@ export default async function getPageContent(pageId) {
 
     return pageContent;
   } catch (error) {
-    // eslint-disable-next-line no-console
     console.error(error);
     return null;
   }
