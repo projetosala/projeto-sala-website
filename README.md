@@ -5,7 +5,7 @@ Caso queira contribuir com novas funcionalidades, melhorias e/ou correções no 
 ## :art: Design
 O design do site foi criado no Figma. Para acessar o protótipo, [clique aqui](https://figma.com/file/F4AeiLaW8Yi7zr4eCuLtpX/Website).
 
-![Design](https://user-images.githubusercontent.com/63798776/182034441-79c018d4-ccbb-45be-b306-1311de042d04.png)
+![Design](https://github.com/projetosala/projeto-sala-website/assets/40719464/a8d10a04-2760-486c-a651-dd426c73ad05)
 
 ## :wrench: Ambiente de Desenvolvimento
 Para que todos tenham o ambiente de desenvolvimento o mais parecido possível e evitar problemas, certifique-se de ter as ferramentas acima com as seguintes versões:
