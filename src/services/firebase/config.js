@@ -1,15 +1,15 @@
 import { initializeApp } from 'firebase/app';
+import axios from 'axios';
 
-const firebaseConfig = {
-  apiKey: process.env.API_KEY,
-  authDomain: process.env.AUTH_DOMAIN,
-  projectId: process.env.PROJECT_ID,
-  storageBucket: process.env.STORAGE_BUCKET,
-  messagingSenderId: process.env.MESSAGING_SENDER_ID,
-  appId: process.env.APP_ID,
-  measurementId: process.env.MEASUREMENT_ID,
-};
+async function fetchFirebaseConfig() {
+  const response = await axios.get('/api/firebase-configs');
+  return response.data;
+}
 
-const firebase = initializeApp(firebaseConfig);
+async function initializeFirebase() {
+  const firebaseConfig = await fetchFirebaseConfig();
+  const firebaseApp = initializeApp(firebaseConfig);
+  return firebaseApp;
+}
 
-export default firebase;
+export default initializeFirebase;

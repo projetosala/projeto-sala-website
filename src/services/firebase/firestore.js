@@ -1,8 +1,8 @@
 import { getFirestore, collection, getDocs } from 'firebase/firestore';
-import firebase from './config';
+import initializeFirebase from './config';
 
-export const firestore = getFirestore(firebase);
-
-export default function getDocuments(path) {
+export default async function getDocuments(path) {
+  const firebase = await initializeFirebase();
+  const firestore = getFirestore(firebase);
   return getDocs(collection(firestore, path));
 }

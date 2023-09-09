@@ -1,11 +1,30 @@
+import React, { useEffect, useState } from 'react';
 import PropTypes from 'prop-types';
 import CtaSection from '../components/base/CtaSection';
 import PageTemplate from '../components/templates/PageTemplate';
-import getPageContent from '../controllers/pageContentController';
 import Carousel from '../components/gallery/Carousel';
-import getImages from '../controllers/galleryController';
+import getContent from '../controllers/getContentController';
 
-export default function Index({ images, texts }) {
+export default function Index() {
+  const [texts, setTexts] = useState(null);
+  const [images, setImages] = useState(null);
+
+  useEffect(() => {
+    const fetchData = async () => {
+      const fetchedTexts = await getContent('home_page');
+      if (fetchedTexts) {
+        setTexts(JSON.parse(fetchedTexts));
+      }
+      const fetchedImages = await getContent('gallery');
+      if (fetchedImages) {
+        const imageJson = JSON.parse(fetchedImages);
+        setImages(imageJson.images);
+      }
+    };
+
+    fetchData();
+  }, []);
+
   return (
     <PageTemplate
       title="Projeto S.A.L.A"
@@ -18,8 +37,7 @@ export default function Index({ images, texts }) {
 
 function PageContent({ images, texts }) {
   if (!texts || !images) {
-    window.location.reload();
-    return null;
+    return <p>Dados não disponíveis. Por favor, tente novamente mais tarde.</p>;
   }
 
   return (
@@ -35,27 +53,12 @@ function PageContent({ images, texts }) {
   );
 }
 
-export async function getStaticProps() {
-  const now = 1;
-  const oneWeekInSeconds = 604800;
-  let texts = null;
-  let images = null;
-
-  await Promise.all([getPageContent('home'), getImages()]).then((values) => {
-    [texts, images] = values;
-  });
-
-  const whenRevalidate = (texts && images) ? oneWeekInSeconds : now;
-
-  return { props: { images, texts }, revalidate: whenRevalidate };
-}
-
-Index.propTypes = {
-  texts: PropTypes.object.isRequired,
-  images: PropTypes.array.isRequired,
+PageContent.defaultProps = {
+  texts: null,
+  images: null,
 };
 
 PageContent.propTypes = {
-  texts: PropTypes.object.isRequired,
-  images: PropTypes.array.isRequired,
+  texts: PropTypes.object,
+  images: PropTypes.array,
 };
