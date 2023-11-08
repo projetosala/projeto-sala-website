@@ -1,0 +1,49 @@
+{
+  "images": [
+    {
+      "url": "https://firebasestorage.googleapis.com/v0/b/projetosalabox.appspot.com/o/events%2Fcemeia%2F01-cemeia-2019.jpg?alt=media",
+      "legend": "CEMEIA - Congresso de Estudos sobre o Meio Ambiente",
+      "year": "2019"
+    },
+    {
+      "url": "https://firebasestorage.googleapis.com/v0/b/projetosalabox.appspot.com/o/events%2Fcemeia%2F02-cemeia-2019.jpg?alt=media",
+      "legend": "CEMEIA - Congresso de Estudos sobre o Meio Ambiente",
+      "year": "2019"
+    },
+    {
+      "url": "https://firebasestorage.googleapis.com/v0/b/projetosalabox.appspot.com/o/events%2Fcemeia%2F03-cemeia-2019.jpg?alt=media",
+      "legend": "CEMEIA - Congresso de Estudos sobre o Meio Ambiente",
+      "year": "2019"
+    },
+    {
+      "url": "https://firebasestorage.googleapis.com/v0/b/projetosalabox.appspot.com/o/events%2Forakulo%2F01-orakulo-2019.jpg?alt=media",
+      "legend": "Orákulo Geográfico",
+      "year": "2019"
+    },
+    {
+      "url": "https://firebasestorage.googleapis.com/v0/b/projetosalabox.appspot.com/o/events%2Forakulo%2F02-orakulo-2019.jpg?alt=media",
+      "legend": "Orákulo Geográfico",
+      "year": "2019"
+    },
+    {
+      "url": "https://firebasestorage.googleapis.com/v0/b/projetosalabox.appspot.com/o/events%2Forakulo%2F03-orakulo-2019.jpg?alt=media",
+      "legend": "Orákulo Geográfico",
+      "year": "2019"
+    },
+    {
+      "url": "https://firebasestorage.googleapis.com/v0/b/projetosalabox.appspot.com/o/events%2Fmocitepial%2F01-mocitepial-2018.jpg?alt=media",
+      "legend": "MOCITEPIAL - Mostra Científica de Inovação, Tecnologia e Engenharia, na Escola EPIAL",
+      "year": "2018"
+    },
+    {
+      "url": "https://firebasestorage.googleapis.com/v0/b/projetosalabox.appspot.com/o/events%2Fmocitepial%2F02-mocitepial-2018.jpg?alt=media",
+      "legend": "MOCITEPIAL - Mostra Científica de Inovação, Tecnologia e Engenharia, na Escola EPIAL",
+      "year": "2018"
+    },
+    {
+      "url": "https://firebasestorage.googleapis.com/v0/b/projetosalabox.appspot.com/o/events%2Fmocitepial%2F03-mocitepial-2018.jpg?alt=media",
+      "legend": "MOCITEPIAL - Mostra Científica de Inovação, Tecnologia e Engenharia, na Escola EPIAL",
+      "year": "2018"
+    }
+  ]
+}
