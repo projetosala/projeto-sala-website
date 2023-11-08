@@ -10,6 +10,7 @@
   flex-direction: column;
   align-items: flex-start;
   gap: 10px;
+  width: 100%;
   max-width: 1200px;
   margin: 0 auto
 }
@@ -22,6 +23,7 @@
   box-shadow: 2px 2px 20px 5px rgba(0, 0, 0, 0.25);
   flex-grow: 0;
   flex-basis: auto;
+  object-fit: fill;
 }
 
 .informations {
@@ -42,6 +44,7 @@
   align-items: center;
   justify-content: flex-end;
   gap: 1.5rem;
+  padding-left: 2rem;
 }
 
 .name {
@@ -59,7 +62,6 @@
 .function {
   flex: 1;
   width: 14.2em;
-  height: 30px;
   left: 0px;
   top: 41px;
   display: flex;
@@ -71,6 +73,21 @@
   line-height: 30px;
   letter-spacing: 0.03em;
   color: var(--primary);
+}
+
+.year {
+  flex: 1;
+  width: 14.2em;
+  left: 0px;
+  top: 41px;
+  display: flex;
+  align-items: flex-start;
+  font-family: var(--text-fonts);
+  font-style: normal;
+  font-weight: var(--regular);
+  font-size: var(--text-small-size);
+  letter-spacing: 0.03em;
+  color: var(--text-secondary);
 }
 
 .informations-mobile {
@@ -85,13 +102,9 @@
   .informations-mobile {
     display: block;
   }
-
-  .networks {
-    flex: 1;
-  }
 }
 
-@media screen and (max-width: 420px) {
+@media screen and (max-width: 420x) {
   .content {
     flex-direction: column;
     align-items: center;
