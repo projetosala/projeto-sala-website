@@ -4,6 +4,8 @@ import SectionHeader from '../components/base/SectionHeader';
 import ParticipantCard from '../components/cards/ParticipantCard';
 
 import participantsData from '../data/project/participants.json';
+import projectContent from '../data/project/project_page_content.json';
+import GoalsBox from '../components/GoalsBox';
 
 export default function TheProject() {
   return (
@@ -17,6 +19,10 @@ export default function TheProject() {
         title="O Projeto"
         description="Um pouco do que inspirou esta iniciativa, quem nós somos e o que conseguimos construir"
       >
+        <GoalsBox
+          title="Objetivos"
+          goals={projectContent.goals}
+        />
         <SectionHeader
           title="Membros"
           description="Todos os membros que fazem e que fizeram parte do projeto"
