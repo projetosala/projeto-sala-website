@@ -38,16 +38,6 @@ npm install
 ### **4. Criar arquivo de variáveis de ambiente**
 Crie uma cópia do arquivo [`.env.example`](./.env.example) na raiz do projeto com o nome `.env` e preencha com os devidos valores.
 
-#### Para obter os dados do Firebase, siga esse passo a passo:
-
-1. Acesse o projeto no [Console do Firebase](https://console.firebase.google.com/project/projetosalabox/)
-2. Acesse as configurações do aplicativo (clique na engrenagem):
-
-![imagem](https://user-images.githubusercontent.com/40719464/192124820-c05fd3ee-e716-470d-a665-7b5a39948cc5.png)
-
-3. Os dados estarão na seção "**Configuração do SDK**", na variável `firebaseConfig`
-4. Insira os dados nas devidas variáveis do arquivo `.env`
-
 #### Para obter a chave de API do Google, siga esse passo a passo:
 
 1. Acesse a [página de credenciais](https://console.cloud.google.com/apis/credentials)
