@@ -1,6 +1,6 @@
 .container {
   height: 600px;
-  padding: 40px 25px;
+  padding: 5rem 6.25rem;
   margin: 0 auto;
 }
 
@@ -49,6 +49,7 @@
 @media (max-width: 650px) {
   .container {
     height: 500px;
+    padding: 50px;
   }
 
   .content {
@@ -79,5 +80,11 @@
   .previous button,
   .next button {
     width: 100%;
+  }
+}
+
+@media (max-width: 420px) {
+  .container {
+    padding: 20px;
   }
 }
