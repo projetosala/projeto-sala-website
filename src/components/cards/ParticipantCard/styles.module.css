@@ -2,7 +2,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 25px;
+  padding: 2.5rem 6.25rem;
 }
 
 .container {
@@ -12,7 +12,7 @@
   gap: 10px;
   width: 100%;
   max-width: 1200px;
-  margin: 0 auto
+  margin: 0 auto;
 }
 
 .image {
@@ -102,11 +102,14 @@
   .informations-mobile {
     display: block;
   }
+
+  .article {
+    padding: 20px 50px;
+  }
 }
 
 @media screen and (max-width: 420px) {
-  .content {
-    flex-direction: column;
-    align-items: center;
+  .article {
+    padding: 20px;
   }
 }
