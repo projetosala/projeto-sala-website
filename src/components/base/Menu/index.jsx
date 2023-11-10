@@ -22,7 +22,7 @@ export default function Menu() {
       <nav className={menuClasses}>
         <nav className={styles.logo2}>
           <img
-            src="/images/logo.svg"
+            src="/svg/logo.svg"
             alt="Logo do Projeto SALA: mapa antigo com as letras QA no centro"
             className={styles.image}
           />
@@ -43,7 +43,7 @@ export default function Menu() {
           </li>
           <li className={styles.logo}>
             <img
-              src="/images/logo.svg"
+              src="/svg/logo.svg"
               alt="Logo do Projeto SALA: mapa antigo com as letras QA no centro"
               className={styles.image}
             />

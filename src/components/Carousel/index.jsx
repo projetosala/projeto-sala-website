@@ -2,7 +2,7 @@ import PropTypes from 'prop-types';
 import { ArrowRight, ArrowLeft } from 'react-feather';
 import React, { useState, useEffect } from 'react';
 import styles from './styles.module.css';
-import SecondaryIconButton from '../../buttons/SecondaryIconButton';
+import SecondaryIconButton from '../buttons/SecondaryIconButton';
 
 export default function Carousel({ images }) {
   const [currentIndex, setCurrentIndex] = useState(0);
