@@ -8,9 +8,9 @@ export default function SectionHeader({ title, description }) {
     <article className={styles.container}>
       <div className={styles.content}>
         <h1 className={styles.title}>{title}</h1>
-        <p className={styles.description}>
+        <div className={styles.description}>
           {HTMLReactParser(description)}
-        </p>
+        </div>
       </div>
     </article>
   );
