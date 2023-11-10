@@ -1,0 +1,19 @@
+{
+  "gamification": "A gamificação é uma estratégia empolgante que transforma tarefas comuns em experiências envolventes, impulsionando o aprendizado de forma divertida. Quer experimentar a diversão educativa? Acesse agora os jogos disponíveis e mergulhe em desafios emocionantes! Venha aprender jogando!",
+  "games": [
+    {
+      "order": 1,
+      "name": "Ecoar: A lenda do Carcará",
+      "imageUrl": "https://firebasestorage.googleapis.com/v0/b/projetosalabox.appspot.com/o/logos%2Fgames%2Fecoar.png?alt=media",
+      "isActive": false,
+      "route": "/games/ecoar"
+    },
+    {
+      "order": 2,
+      "name": "Mutum: Desafio Ambiental",
+      "imageUrl": "https://firebasestorage.googleapis.com/v0/b/projetosalabox.appspot.com/o/logos%2Fgames%2Fmutum.png?alt=media",
+      "isActive": false,
+      "route": "/games/mutum"
+    }
+  ]
+}

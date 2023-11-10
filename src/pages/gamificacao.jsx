@@ -1,5 +1,6 @@
 import Head from 'next/head';
 import PageTemplate from '../components/templates/PageTemplate';
+import GamesVerticalBox from '../components/games/GamesVerticalBox';
 
 export default function Gamification() {
   return (
@@ -13,7 +14,9 @@ export default function Gamification() {
       <PageTemplate
         title="Gamificação"
         description="Você quer aprender ou se divertir? E que tal os dois?"
-      />
+      >
+        <GamesVerticalBox />
+      </PageTemplate>
     </>
   );
 }

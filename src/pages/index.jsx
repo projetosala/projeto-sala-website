@@ -4,6 +4,7 @@ import Carousel from '../components/gallery/Carousel';
 
 import homeContent from '../data/home_page_content.json';
 import galleryContent from '../data/gallery_content.json';
+import GamesHorizontalBox from '../components/games/GamesHorizontalBox';
 
 export default function Index() {
   return (
@@ -18,6 +19,7 @@ export default function Index() {
           actionText="Conheça o projeto"
           target="/o-projeto"
         />
+        <GamesHorizontalBox />
         <Carousel images={galleryContent.images} />
       </>
     </PageTemplate>
