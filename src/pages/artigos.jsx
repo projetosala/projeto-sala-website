@@ -4,7 +4,7 @@ import { useCallback } from 'react';
 import { ExternalLink } from 'react-feather';
 import BlogArticleCard from '../components/cards/BlogArticleCard';
 import PageTemplate from '../components/templates/PageTemplate';
-import getPosts from '../controllers/blogController';
+import { getPosts } from '../controllers/blogController';
 import shortPostContent from '../utils/shortPostContent';
 import formatDate from '../utils/formatDate';
 import SectionHeader from '../components/base/SectionHeader';

@@ -1,11 +1,23 @@
 .footer {
   max-width: 1250px;
-  padding: 0 25px 40px;
+  padding: 0 0 5rem 4rem;
   margin: 0 auto;
 }
 
 @media (max-width: 500px) {
   .footer button {
     width: 100%;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .footer {
+    padding: 50px;
+  }
+}
+
+@media screen and (max-width: 420px) {
+  .footer {
+    padding: 30px 20px;
   }
 }

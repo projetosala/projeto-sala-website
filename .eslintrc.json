@@ -23,6 +23,7 @@
     "react/forbid-prop-types": "off",
     "linebreak-style": "off",
     "react/jsx-no-bind": "off",
-    "no-console": "off"
+    "no-console": "off",
+    "react/no-danger": "off"
   }
 }

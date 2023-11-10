@@ -1,3 +1,4 @@
+import PropTypes from 'prop-types';
 import Head from 'next/head';
 import PageTemplate from '../components/templates/PageTemplate';
 import SectionHeader from '../components/base/SectionHeader';
@@ -6,8 +7,11 @@ import ParticipantCard from '../components/cards/ParticipantCard';
 import participantsData from '../data/project/participants.json';
 import projectContent from '../data/project/project_page_content.json';
 import GoalsBox from '../components/GoalsBox';
+import { getProjectHistoryPost } from '../controllers/blogController';
+import CtaSection from '../components/base/CtaSection';
+import shortPostContent from '../utils/shortPostContent';
 
-export default function TheProject() {
+export default function TheProject({ history }) {
   return (
     <>
       <Head>
@@ -19,6 +23,13 @@ export default function TheProject() {
         title="O Projeto"
         description="Um pouco do que inspirou esta iniciativa, quem nós somos e o que conseguimos construir"
       >
+        <CtaSection
+          title="A história"
+          text={shortPostContent(history.content, 1000)}
+          actionText="Continue lendo"
+          target={history.url}
+          isExternalTarget
+        />
         <GoalsBox
           title="Objetivos"
           goals={projectContent.goals}
@@ -38,3 +49,16 @@ function ParticipantList({ participants }) {
     <ParticipantCard key={participant.order} participant={participant} />
   ));
 }
+
+export async function getStaticProps() {
+  const now = 1;
+  const oneWeekInSeconds = 604800;
+  const history = await getProjectHistoryPost();
+  const whenRevalidate = history ? oneWeekInSeconds : now;
+
+  return { props: { history }, revalidate: whenRevalidate };
+}
+
+TheProject.propTypes = {
+  history: PropTypes.object.isRequired,
+};
