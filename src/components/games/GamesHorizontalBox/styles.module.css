@@ -5,7 +5,9 @@
 .gamesContainer {
   display: flex;
   flex-direction: row;
+  max-width: 133rem;
   padding: 0 6.25rem 5rem 6.25rem;
+  margin: 0 auto;
 }
 
 .container {
