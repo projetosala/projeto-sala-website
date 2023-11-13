@@ -21,7 +21,7 @@
       "name": "Dhiana Pereira",
       "function": "Software Developer",
       "image": "https://firebasestorage.googleapis.com/v0/b/projetosalabox.appspot.com/o/participants%2Fdhiana.jpeg?alt=media",
-      "bio": "Mobile Engineer na Unico. Estudante de Sistemas de Informação no Instituto Federal de Educação, Ciência e Tecnologia de Alagoas (IFAL). Dentro da Instituição no Laboratório de Engenharia e Análise de Dados (LEAD), atuo como Flutter Developer e participo de pesquisas na área de Inteligência Artificial.",
+      "bio": "Mobile Developer na unico. Estudante de Sistemas de Informação no Instituto Federal de Educação, Ciência e Tecnologia de Alagoas (IFAL). Dentro da Instituição no Laboratório de Engenharia e Análise de Dados (LEAD), atua como Flutter Developer e participa de pesquisas na área de Inteligência Artificial.",
       "year": {
         "entry": 2018,
         "leave": null
@@ -45,13 +45,13 @@
       "networks": {
         "github": "https://github.com/arthwrvl",
         "instagram": null,
-        "linkedin": null
+        "linkedin": "https://www.linkedin.com/in/arthurvlr/"
       }
     },
     {
       "order": 4,
       "name": "Guilherme Augusto",
-      "function": "Designer",
+      "function": "Software Developer & Designer",
       "image": "https://firebasestorage.googleapis.com/v0/b/projetosalabox.appspot.com/o/participants%2Fguilherme.jpg?alt=media",
       "bio": "Técnico em Informática pelo Instituto Federal de Educação, Ciência e Tecnologia de Alagoas (IFAL). Interesses de pesquisa envolvem: Design, Desenvolvimento de Software e Jogos, Realidade Aumentada e Inteligência Artificial.",
       "year": {
@@ -60,7 +60,7 @@
       },
       "networks": {
         "github": "https://github.com/Guiarcds",
-        "instagram": "https://www.instagram.com/_.guilhermeaugusto/",
+        "instagram": "https://www.instagram.com/guilhermeaugustocanto/",
         "linkedin": null
       }
     },
@@ -85,14 +85,14 @@
       "name": "Alex Custódio",
       "function": "Game Developer",
       "image": "https://firebasestorage.googleapis.com/v0/b/projetosalabox.appspot.com/o/participants%2Falex.png?alt=media",
-      "bio": "Game Developer na Sot Code. Estudante do Curso Técnico de Informática no Instituto Federal de Alagoas, onde faço parte do LEAD (Laboratório de Engenharia e Análise de Dados). Conheci a programação com 10 anos e sigo em busca de aprendizado!",
+      "bio": "Game Developer na Sot Code. Estudante do Curso Técnico de Informática no Instituto Federal de Alagoas, onde faz parte do LEAD (Laboratório de Engenharia e Análise de Dados).",
       "year": {
         "entry": 2022,
         "leave": null
       },
       "networks": {
         "github": "https://github.com/alex-custodio",
-        "instagram": "https://instagram.com/alexcustodiodev",
+        "instagram": "https://instagram.com/_alexcustodio",
         "linkedin": "https://www.linkedin.com/in/alex-cust%C3%B3dio-74a24b249"
       }
     },
@@ -101,7 +101,7 @@
       "name": "Namur Sebastião",
       "function": "Game Developer",
       "image": "https://firebasestorage.googleapis.com/v0/b/projetosalabox.appspot.com/o/participants%2Fnamur.png?alt=media",
-      "bio": "Estudante do curso técnico de informática no Instituto Federal de Alagoas (IFAL Campus Arapiraca) | Dev na SoT Code | Estudando C# e Unity atualmente | Possuo conhecimento básico em Java | Buscando uma versão melhor de mim e mais conhecimento a cada dia que se passa.",
+      "bio": "Estudante do curso Técnico de Informática no Instituto Federal de Alagoas - Campus Arapiraca. Desenvolvedor na SoT Code e atualmente está estudando C# e Unity.",
       "year": {
         "entry": 2022,
         "leave": null
@@ -133,7 +133,7 @@
       "name": "Gabriel Anderson",
       "function": "Game Developer",
       "image": "https://firebasestorage.googleapis.com/v0/b/projetosalabox.appspot.com/o/participants%2Fgabriel-anderson.jpeg?alt=media",
-      "bio": "Game developer e designer da Sot Code. Cursando Informática no Instituto Federal de Alagoas. Conhecimento médio de HTML, CSS, um pouco de Java, Python e atualmente focando na linguagem C#. Procurando sempre me superar cada dia, e tentando absorver o máximo de conhecimento, trazendo um trabalho criativo e bem feito.",
+      "bio": "Game Developer e Designer da Sot Code. Cursando Informática no Instituto Federal de Alagoas.",
       "year": {
         "entry": 2022,
         "leave": null
@@ -181,7 +181,7 @@
       "name": "Ronaldo Norberto",
       "function": "Frontend Developer",
       "image": "https://firebasestorage.googleapis.com/v0/b/projetosalabox.appspot.com/o/participants%2Fronaldo.jpeg?alt=media",
-      "bio": "Técnico em Informática pelo Instituto Federal de Educação, Ciência e Tecnologia de Alagoas (IFAL). Interesses de pesquisa envolvem: Desenvolvimento de Software e em Inteligência Artificial.",
+      "bio": "Técnico em Informática pelo Instituto Federal de Educação, Ciência e Tecnologia de Alagoas (IFAL). Interesses de pesquisa envolvem: Desenvolvimento de Software e Inteligência Artificial.",
       "year": {
         "entry": 2022,
         "leave": 2023
