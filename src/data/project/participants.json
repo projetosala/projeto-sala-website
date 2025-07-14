@@ -21,7 +21,7 @@
       "name": "Dhiana Pereira",
       "function": "Software Developer",
       "image": "https://firebasestorage.googleapis.com/v0/b/projetosalabox.appspot.com/o/participants%2Fdhiana.jpeg?alt=media",
-      "bio": "Mobile Developer na unico. Estudante de Sistemas de Informação no Instituto Federal de Educação, Ciência e Tecnologia de Alagoas (IFAL). Dentro da Instituição no Laboratório de Engenharia e Análise de Dados (LEAD), atua como Flutter Developer e participa de pesquisas na área de Inteligência Artificial.",
+      "bio": "Mobile Developer na Brasil Paralelo. Estudante de Sistemas de Informação no Instituto Federal de Educação, Ciência e Tecnologia de Alagoas (IFAL). Dentro da Instituição na Starti Empresa Júnior, atua como Gerente de projetos.",
       "year": {
         "entry": 2018,
         "leave": null
@@ -37,10 +37,10 @@
       "name": "Arthur Valério",
       "function": "Game Developer",
       "image": "https://firebasestorage.googleapis.com/v0/b/projetosalabox.appspot.com/o/participants%2Farthur.jpeg?alt=media",
-      "bio": "Graduando em Ciência da Computação pela Universidade Federal de Alagoas (UFAL). Interesses de pesquisa envolvem: Desenvolvimento de Jogos, Realidade Aumentada e Modelagem 3D.",
+      "bio": "Técnico em Informática pelo Instituto Federal de Educação, Ciência e Tecnologia de Alagoas (IFAL). Interesses de pesquisa envolvem: Desenvolvimento de Jogos, Realidade Aumentada e Modelagem 3D.",
       "year": {
         "entry": 2018,
-        "leave": null
+        "leave": 2020
       },
       "networks": {
         "github": "https://github.com/arthwrvl",
@@ -56,7 +56,7 @@
       "bio": "Técnico em Informática pelo Instituto Federal de Educação, Ciência e Tecnologia de Alagoas (IFAL). Interesses de pesquisa envolvem: Design, Desenvolvimento de Software e Jogos, Realidade Aumentada e Inteligência Artificial.",
       "year": {
         "entry": 2018,
-        "leave": null
+        "leave": 2020
       },
       "networks": {
         "github": "https://github.com/Guiarcds",
@@ -72,7 +72,7 @@
       "bio": "Técnico em informática pelo Instituto Federal de Alagoas (IFAL), desenvolvedor fullstack e designer. Interesses de pesquisa envolvem: desenvolvimento de software, design de interfaces, usabilidade, experiência do usuário e automação.",
       "year": {
         "entry": 2022,
-        "leave": null
+        "leave": 2023
       },
       "networks": {
         "github": "https://github.com/filipealvess",
@@ -85,10 +85,10 @@
       "name": "Alex Custódio",
       "function": "Game Developer",
       "image": "https://firebasestorage.googleapis.com/v0/b/projetosalabox.appspot.com/o/participants%2Falex.png?alt=media",
-      "bio": "Game Developer na Sot Code. Estudante do Curso Técnico de Informática no Instituto Federal de Alagoas, onde faz parte do LEAD (Laboratório de Engenharia e Análise de Dados).",
+      "bio": "Game Developer na Sot Code. Formado Técnico em Informática pelo Instituto Federal de Educação, Ciência e Tecnologia de Alagoas (IFAL).",
       "year": {
         "entry": 2022,
-        "leave": null
+        "leave": 2024
       },
       "networks": {
         "github": "https://github.com/alex-custodio",
@@ -101,10 +101,10 @@
       "name": "Namur Sebastião",
       "function": "Game Developer",
       "image": "https://firebasestorage.googleapis.com/v0/b/projetosalabox.appspot.com/o/participants%2Fnamur.png?alt=media",
-      "bio": "Estudante do curso Técnico de Informática no Instituto Federal de Alagoas - Campus Arapiraca. Desenvolvedor na SoT Code e atualmente está estudando C# e Unity.",
+      "bio": "Técnico em Informática pelo Instituto Federal de Educação, Ciência e Tecnologia de Alagoas (IFAL). Desenvolvedor na SoT Code e atualmente está estudando C# e Unity.",
       "year": {
         "entry": 2022,
-        "leave": null
+        "leave": 2024
       },
       "networks": {
         "github": "https://github.com/NRTarnished",
@@ -117,10 +117,10 @@
       "name": "Carlos Eduardo",
       "function": "Game Developer",
       "image": "https://firebasestorage.googleapis.com/v0/b/projetosalabox.appspot.com/o/participants%2Fcarlos.jpeg?alt=media",
-      "bio": "Estudante do IFAL - Campus Arapiraca, do curso técnico de informática. Possui algumas experiências na área comercial e gestão de empresas.",
+      "bio": "Técnico em Informática pelo Instituto Federal de Educação, Ciência e Tecnologia de Alagoas (IFAL). Possui algumas experiências na área comercial e gestão de empresas.",
       "year": {
         "entry": 2022,
-        "leave": null
+        "leave": 2024
       },
       "networks": {
         "github": "https://github.com/ceduardoferreira",
@@ -133,9 +133,9 @@
       "name": "Gabriel Anderson",
       "function": "Game Developer",
       "image": "https://firebasestorage.googleapis.com/v0/b/projetosalabox.appspot.com/o/participants%2Fgabriel-anderson.jpeg?alt=media",
-      "bio": "Game Developer e Designer da Sot Code. Cursando Informática no Instituto Federal de Alagoas.",
+      "bio": "Game Developer e Designer da Sot Code. Formado Técnico em Informática pelo Instituto Federal de Alagoas.",
       "year": {
-        "entry": 2022,
+        "entry": 2024,
         "leave": null
       },
       "networks": {
@@ -149,7 +149,7 @@
       "name": "Lucas Oliveira",
       "function": "Researcher",
       "image": "https://firebasestorage.googleapis.com/v0/b/projetosalabox.appspot.com/o/participants%2Flucas.jpeg?alt=media",
-      "bio": "Graduando em Sistemas de Informação pela Universidade Federal de Alagoas (UFAL). Interesses de pesquisa envolvem: Desenvolvimento de Software e Jogos.",
+      "bio": "Técnico em Informática pelo Instituto Federal de Educação, Ciência e Tecnologia de Alagoas (IFAL). Interesses de pesquisa envolvem: Desenvolvimento de Software e Jogos.",
       "year": {
         "entry": 2018,
         "leave": 2020
