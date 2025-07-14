@@ -10,10 +10,10 @@ O design do site foi criado no Figma. Para acessar o protótipo, [clique aqui](h
 ## :wrench: Ambiente de Desenvolvimento
 Para que todos tenham o ambiente de desenvolvimento o mais parecido possível e evitar problemas, certifique-se de ter as ferramentas acima com as seguintes versões:
 
-| Ferramenta | Versão |
-| --- | --- |
-| Git | A mais recente |
-| NodeJS | v18.17.1 |
+| Ferramenta | Versão         |
+| ---------- | -------------- |
+| Git        | A mais recente |
+| NodeJS     | v18.17.0       |
 
 Para instalar as devidas versões, siga o passo a passo do arquivo [`dev-environment.md`](./.github/doc/dev-environment.md).
 
@@ -37,19 +37,6 @@ npm install
 
 ### **4. Criar arquivo de variáveis de ambiente**
 Crie uma cópia do arquivo [`.env.example`](./.env.example) na raiz do projeto com o nome `.env` e preencha com os devidos valores.
-
-#### Para obter a chave de API do Google, siga esse passo a passo:
-
-1. Acesse a [página de credenciais](https://console.cloud.google.com/apis/credentials)
-2. Selecione um projeto (ou crie, caso não possua)
-
-![imagem](https://user-images.githubusercontent.com/63798776/206915956-384d61bb-0f3f-43f7-a3fe-4c2c5da7e7a0.png)
-
-3. Clique em **CRIAR CREDENCIAIS** e selecione **Chave de API**
-
-![imagem](https://user-images.githubusercontent.com/63798776/206916094-0300a90c-251d-4753-8c08-975cb7b65948.png)
-
-4. Copie a credencial gerada e cole no arquivo `.env`
 
 ### **5. Executar a aplicação**
 ```bash
