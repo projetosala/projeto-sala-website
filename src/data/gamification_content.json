@@ -6,14 +6,21 @@
       "name": "Ecoar: A lenda do Carcará",
       "imageUrl": "https://firebasestorage.googleapis.com/v0/b/projetosalabox.appspot.com/o/logos%2Fgames%2Fecoar.png?alt=media",
       "isActive": false,
-      "route": "/games/ecoar"
+      "route": "/jogos/ecoar"
     },
     {
       "order": 2,
+      "name": "Enigmas",
+      "imageUrl": "https://firebasestorage.googleapis.com/v0/b/projetosalabox.appspot.com/o/logos%2Fgames%2Fmutum.png?alt=media",
+      "isActive": false,
+      "route": "/jogos/enigmas"
+    },
+    {
+      "order": 3,
       "name": "Mutum: Desafio Ambiental",
       "imageUrl": "https://firebasestorage.googleapis.com/v0/b/projetosalabox.appspot.com/o/logos%2Fgames%2Fmutum.png?alt=media",
       "isActive": false,
-      "route": "/games/mutum"
+      "route": "/jogos/mutum"
     }
   ]
 }

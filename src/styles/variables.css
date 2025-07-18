@@ -29,6 +29,7 @@ html {
 
   /* BORDER */
   --border: 2px solid #545D66;
+  --thin-border: 1px solid #545D66;
   --light-border: 1px solid rgba(255, 255, 255, 0.15);
 
   /* GRADIENT */

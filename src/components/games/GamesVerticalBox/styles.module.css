@@ -13,7 +13,7 @@
   background-color: var(--background);
   font-family: var(--text-fonts);
   font-size: var(--text-tiny-size);
-  border: var(--light-border);
+  border: var(--thin-border);
 }
 
 .step {
