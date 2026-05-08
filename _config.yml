@@ -8,5 +8,4 @@ permalink: pretty
 plugins:
   - jekyll-feed
 exclude:
-  - node_modules
   - vendor

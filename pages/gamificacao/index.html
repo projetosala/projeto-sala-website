@@ -4,6 +4,7 @@ title: Gamificação
 description: Você quer aprender ou se divertir? E que tal os dois?
 keywords: realidade aumentada, RPG, tabuleiro
 body_class: page-games
+permalink: /gamificacao/
 ---
 
 <section class="games-shell">
@@ -13,6 +14,10 @@ body_class: page-games
   <div class="games-steps">
     {% for game in site.data.gamification_content.games %}
     <div class="game-step">
+      <div class="game-step__marker">
+        <span>{{ forloop.index }}</span>
+      </div>
+
       {% if game.isActive %}
       <a class="game-card" href="{{ game.route | relative_url }}">
         <div class="game-card__content">
@@ -21,7 +26,10 @@ body_class: page-games
             src="{{ game.imageUrl }}"
             alt="{{ game.name }}"
           />
-          <p class="game-card__name">{{ game.name }}</p>
+          <div class="game-card__copy">
+            <p class="game-card__status">Disponível</p>
+            <p class="game-card__name">{{ game.name }}</p>
+          </div>
         </div>
         <svg viewBox="0 0 24 24" focusable="false">
           <path d="M5 12h14M13 5l7 7-7 7" />
@@ -31,7 +39,10 @@ body_class: page-games
       <div class="game-card game-card--disabled" aria-disabled="true">
         <div class="game-card__content">
           <div class="game-card__placeholder">?</div>
-          <p class="game-card__name">Em breve</p>
+          <div class="game-card__copy">
+            <p class="game-card__status">Em desenvolvimento</p>
+            <p class="game-card__name">{{ game.name }}</p>
+          </div>
         </div>
       </div>
       {% endif %} {% unless forloop.last %}

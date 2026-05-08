@@ -10,42 +10,56 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   }
 
-  const carousel = document.querySelector("[data-carousel]");
+  const paginations = document.querySelectorAll("[data-pagination]");
 
-  if (carousel) {
-    const image = carousel.querySelector("[data-carousel-image]");
-    const legend = carousel.querySelector("[data-carousel-legend]");
-    const year = carousel.querySelector("[data-carousel-year]");
-    const previous = carousel.querySelector("[data-carousel-previous]");
-    const next = carousel.querySelector("[data-carousel-next]");
+  paginations.forEach((pagination) => {
+    const items = Array.from(pagination.querySelectorAll("[data-page-item]"));
+    const controls = pagination.parentElement?.querySelector("[data-pagination-controls]");
+    const previous = controls?.querySelector("[data-pagination-previous]");
+    const next = controls?.querySelector("[data-pagination-next]");
+    const status = controls?.querySelector("[data-pagination-status]");
+    const perPage = Number(pagination.dataset.perPage || 3);
+    const totalPages = Math.ceil(items.length / perPage);
 
-    let index = Number(carousel.dataset.currentIndex || 0);
-    const items = JSON.parse(carousel.dataset.items || "[]");
-
-    const render = () => {
-      const current = items[index];
-
-      if (!current) {
-        return;
+    if (!controls || totalPages <= 1) {
+      if (controls) {
+        controls.hidden = true;
       }
+      items.forEach((item) => {
+        item.hidden = false;
+      });
+      return;
+    }
 
-      image.src = current.url;
-      image.alt = current.legend;
-      legend.textContent = current.legend;
-      year.textContent = current.year;
-      carousel.dataset.currentIndex = String(index);
+    let currentPage = 1;
+
+    const renderPage = () => {
+      const start = (currentPage - 1) * perPage;
+      const end = start + perPage;
+
+      items.forEach((item, index) => {
+        item.hidden = index < start || index >= end;
+      });
+
+      status.textContent = `Página ${currentPage} de ${totalPages}`;
+      previous.disabled = currentPage === 1;
+      next.disabled = currentPage === totalPages;
     };
 
     previous?.addEventListener("click", () => {
-      index = index === 0 ? items.length - 1 : index - 1;
-      render();
+      if (currentPage > 1) {
+        currentPage -= 1;
+        renderPage();
+      }
     });
 
     next?.addEventListener("click", () => {
-      index = index === items.length - 1 ? 0 : index + 1;
-      render();
+      if (currentPage < totalPages) {
+        currentPage += 1;
+        renderPage();
+      }
     });
 
-    render();
-  }
+    renderPage();
+  });
 });

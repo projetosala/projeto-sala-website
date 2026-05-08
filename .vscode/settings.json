@@ -4,5 +4,11 @@
   "editor.detectIndentation": true,
   "workbench.tree.indent": 15,
   "editor.formatOnSave": true,
-  "editor.trimAutoWhitespace": true
+  "editor.trimAutoWhitespace": true,
+  "files.associations": {
+    "*.html": "liquid"
+  },
+  "[liquid]": {
+    "editor.formatOnSave": false
+  }
 }

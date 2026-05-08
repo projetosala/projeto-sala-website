@@ -1,7 +1,15 @@
 ---
 layout: default
 ---
-{% include site_header.html title=page.title description=page.description show_chevron=page.show_chevron %}
+
+{% include
+  site_header.html
+  title=page.title
+  description=page.description
+  show_chevron=page.show_chevron
+  compact=page.compact_header
+%}
+
 <main>
   {{ content }}
 </main>

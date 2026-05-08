@@ -48,16 +48,6 @@ excerpt: "Resumo curto do artigo para os cards."
 Conteúdo do artigo.
 ```
 
-## Deploy
-
-O deploy no GitHub Pages está automatizado em [.github/workflows/deploy-pages.yml](./.github/workflows/deploy-pages.yml).
-
-Para ativar:
-
-1. No GitHub, abra `Settings > Pages`.
-2. Em `Source`, selecione `GitHub Actions`.
-3. Faça push na branch `main`.
-
 ## Licença
 
 Código licenciado sob a [Licença MIT](./LICENSE).

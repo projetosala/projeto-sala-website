@@ -5,39 +5,67 @@
         src="{{ '/svg/logo.svg' | relative_url }}"
         alt="Logo do Projeto SALA: mapa antigo com as letras QA no centro"
         class="menu__logo-image"
-      >
-      <span class="menu__brand-text">Projeto<br>S.A.L.A</span>
+      />
+      <span class="menu__brand-text">Projeto<br />S.A.L.A</span>
     </a>
 
     <ul class="menu__list" id="menu-list" data-menu-list>
       <li class="menu__item">
-        <a class="menu__link{% if page.url == '/' %} is-active{% endif %}" href="{{ '/' | relative_url }}">INÍCIO</a>
+        <a
+          class="menu__link{% if page.url == '/' %} is-active{% endif %}"
+          href="{{ '/' | relative_url }}"
+          >INÍCIO</a
+        >
       </li>
       <li class="menu__item">
-        <a class="menu__link{% if page.url == '/artigos/' %} is-active{% endif %}" href="{{ '/artigos/' | relative_url }}">ARTIGOS</a>
+        <a
+          class="menu__link{% if page.url == '/artigos/' or page.url contains '/artigos/' %} is-active{% endif %}"
+          href="{{ '/artigos/' | relative_url }}"
+          >ARTIGOS</a
+        >
       </li>
       <li class="menu__item menu__item--logo" aria-hidden="true">
         <img
           src="{{ '/svg/logo.svg' | relative_url }}"
           alt=""
           class="menu__logo-image"
+        />
+      </li>
+      <li class="menu__item">
+        <a
+          class="menu__link{% if page.url == '/o-projeto/' %} is-active{% endif %}"
+          href="{{ '/o-projeto/' | relative_url }}"
+          >O PROJETO</a
         >
       </li>
       <li class="menu__item">
-        <a class="menu__link{% if page.url == '/o-projeto/' or page.url == '/historia-do-projeto/' %} is-active{% endif %}" href="{{ '/o-projeto/' | relative_url }}">O PROJETO</a>
-      </li>
-      <li class="menu__item">
-        <a class="menu__link{% if page.url == '/gamificacao/' %} is-active{% endif %}" href="{{ '/gamificacao/' | relative_url }}">GAMIFICAÇÃO</a>
+        <a
+          class="menu__link{% if page.url == '/gamificacao/' %} is-active{% endif %}"
+          href="{{ '/gamificacao/' | relative_url }}"
+          >GAMIFICAÇÃO</a
+        >
       </li>
     </ul>
 
-    <button class="menu__toggle" type="button" aria-expanded="false" aria-controls="menu-list" data-menu-toggle>
-      <span class="menu__toggle-icon menu__toggle-icon--open" aria-hidden="true">
+    <button
+      class="menu__toggle"
+      type="button"
+      aria-expanded="false"
+      aria-controls="menu-list"
+      data-menu-toggle
+    >
+      <span
+        class="menu__toggle-icon menu__toggle-icon--open"
+        aria-hidden="true"
+      >
         <svg viewBox="0 0 24 24" focusable="false">
           <path d="M4 6h16M4 12h16M4 18h16" />
         </svg>
       </span>
-      <span class="menu__toggle-icon menu__toggle-icon--close" aria-hidden="true">
+      <span
+        class="menu__toggle-icon menu__toggle-icon--close"
+        aria-hidden="true"
+      >
         <svg viewBox="0 0 24 24" focusable="false">
           <path d="M6 6l12 12M18 6L6 18" />
         </svg>

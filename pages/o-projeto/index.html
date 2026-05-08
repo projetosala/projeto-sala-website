@@ -1,0 +1,64 @@
+---
+layout: page
+title: O Projeto
+description: Um pouco do que inspirou esta iniciativa, quem nós somos e o que conseguimos construir
+keywords: gamificação, alagoas, biomas
+body_class: page-project
+permalink: /o-projeto/
+---
+
+{% capture history_description %}
+<p>
+  O Projeto S.A.L.A nasce do desejo de transformar a sala de aula em um espaço
+  mais vivo, investigativo e conectado com o território alagoano.
+</p>
+<p>
+  Ao aproximar geografia, educação ambiental e experiências lúdicas, o projeto
+  busca tornar o aprendizado mais significativo, sensível e participativo.
+</p>
+{% endcapture %}
+
+{% include
+  section_header.html
+  title="A história"
+  description=history_description
+%}
+
+<section class="goals-box">
+  <div class="goals-box__content">
+    <h2 class="goals-box__title">Objetivos</h2>
+    <ul class="goals-box__list">
+      <li>
+        Colaborar com o processo de ensino e aprendizagem da fitogeografia
+        alagoana.
+      </li>
+      <li>Ampliar o conhecimento sobre temas ligados à educação ambiental.</li>
+      <li>
+        Produzir ferramentas colaborativas de educação que envolvam docentes e
+        discentes.
+      </li>
+      <li>
+        Transversalizar a ciência geográfica em diálogo com outras áreas do
+        conhecimento.
+      </li>
+      <li>
+        Integrar geografia, educação e tecnologia em práticas mais acessíveis e
+        significativas.
+      </li>
+    </ul>
+  </div>
+</section>
+
+{% include
+  section_header.html
+  title="Membros"
+  description="Pessoas que contribuíram para construir o Projeto S.A.L.A em diferentes momentos."
+%}
+
+<section class="participants-list">
+  <div class="participants-list__content participants-list--grid">
+    {% for participant in site.data.project.participants.participants %}
+      {% include participant_card.html participant=participant %}
+    {% endfor %}
+  </div>
+</section>

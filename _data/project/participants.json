@@ -3,9 +3,7 @@
     {
       "order": 1,
       "name": "Geraldo Ramires",
-      "function": "Project Creator",
-      "image": "https://firebasestorage.googleapis.com/v0/b/projetosalabox.appspot.com/o/participants%2Fgeraldo.jpeg?alt=media",
-      "bio": "Mestre em Análise de Sistemas Ambientais pelo Centro Universitário Cesmac (2019). Professor a mais de 20 anos, tendo atuado pela rede privada, municipal e estadual. Professor da rede federal, pelo Instituto Federal de Educação, Ciência e Tecnologia de Alagoas – Campus Arapiraca, desde 2012.",
+      "function": "Fundador do Projeto",
       "year": {
         "entry": 2018,
         "leave": null
@@ -19,9 +17,7 @@
     {
       "order": 2,
       "name": "Dhiana Pereira",
-      "function": "Software Developer",
-      "image": "https://firebasestorage.googleapis.com/v0/b/projetosalabox.appspot.com/o/participants%2Fdhiana.jpeg?alt=media",
-      "bio": "Mobile Developer na Brasil Paralelo. Estudante de Sistemas de Informação no Instituto Federal de Educação, Ciência e Tecnologia de Alagoas (IFAL). Dentro da Instituição na Starti Empresa Júnior, atua como Gerente de projetos.",
+      "function": "Desenvolvedora de Software",
       "year": {
         "entry": 2018,
         "leave": null
@@ -35,9 +31,7 @@
     {
       "order": 3,
       "name": "Arthur Valério",
-      "function": "Game Developer",
-      "image": "https://firebasestorage.googleapis.com/v0/b/projetosalabox.appspot.com/o/participants%2Farthur.jpeg?alt=media",
-      "bio": "Técnico em Informática pelo Instituto Federal de Educação, Ciência e Tecnologia de Alagoas (IFAL). Interesses de pesquisa envolvem: Desenvolvimento de Jogos, Realidade Aumentada e Modelagem 3D.",
+      "function": "Desenvolvedor de Jogos",
       "year": {
         "entry": 2018,
         "leave": 2020
@@ -51,9 +45,7 @@
     {
       "order": 4,
       "name": "Guilherme Augusto",
-      "function": "Software Developer & Designer",
-      "image": "https://firebasestorage.googleapis.com/v0/b/projetosalabox.appspot.com/o/participants%2Fguilherme.jpg?alt=media",
-      "bio": "Técnico em Informática pelo Instituto Federal de Educação, Ciência e Tecnologia de Alagoas (IFAL). Interesses de pesquisa envolvem: Design, Desenvolvimento de Software e Jogos, Realidade Aumentada e Inteligência Artificial.",
+      "function": "Desenvolvedor de Software",
       "year": {
         "entry": 2018,
         "leave": 2020
@@ -67,9 +59,7 @@
     {
       "order": 5,
       "name": "Filipe Alves",
-      "function": "Software Developer & Designer",
-      "image": "https://firebasestorage.googleapis.com/v0/b/projetosalabox.appspot.com/o/participants%2Ffilipe-alves.jpeg?alt=media",
-      "bio": "Técnico em informática pelo Instituto Federal de Alagoas (IFAL), desenvolvedor fullstack e designer. Interesses de pesquisa envolvem: desenvolvimento de software, design de interfaces, usabilidade, experiência do usuário e automação.",
+      "function": "Desenvolvedor de Software",
       "year": {
         "entry": 2022,
         "leave": 2023
@@ -83,9 +73,7 @@
     {
       "order": 6,
       "name": "Alex Custódio",
-      "function": "Game Developer",
-      "image": "https://firebasestorage.googleapis.com/v0/b/projetosalabox.appspot.com/o/participants%2Falex.png?alt=media",
-      "bio": "Game Developer na Sot Code. Formado Técnico em Informática pelo Instituto Federal de Educação, Ciência e Tecnologia de Alagoas (IFAL).",
+      "function": "Desenvolvedor de Jogos",
       "year": {
         "entry": 2022,
         "leave": 2023
@@ -99,9 +87,7 @@
     {
       "order": 7,
       "name": "Namur Sebastião",
-      "function": "Game Developer",
-      "image": "https://firebasestorage.googleapis.com/v0/b/projetosalabox.appspot.com/o/participants%2Fnamur.png?alt=media",
-      "bio": "Técnico em Informática pelo Instituto Federal de Educação, Ciência e Tecnologia de Alagoas (IFAL). Desenvolvedor na SoT Code e atualmente está estudando C# e Unity.",
+      "function": "Desenvolvedor de Jogos",
       "year": {
         "entry": 2022,
         "leave": 2023
@@ -115,9 +101,7 @@
     {
       "order": 8,
       "name": "Carlos Eduardo",
-      "function": "Game Developer",
-      "image": "https://firebasestorage.googleapis.com/v0/b/projetosalabox.appspot.com/o/participants%2Fcarlos.jpeg?alt=media",
-      "bio": "Técnico em Informática pelo Instituto Federal de Educação, Ciência e Tecnologia de Alagoas (IFAL). Possui algumas experiências na área comercial e gestão de empresas.",
+      "function": "Desenvolvedor de Jogos",
       "year": {
         "entry": 2022,
         "leave": 2023
@@ -131,9 +115,7 @@
     {
       "order": 9,
       "name": "Gabriel Anderson",
-      "function": "Game Developer",
-      "image": "https://firebasestorage.googleapis.com/v0/b/projetosalabox.appspot.com/o/participants%2Fgabriel-anderson.jpeg?alt=media",
-      "bio": "Game Developer e Designer da Sot Code. Formado Técnico em Informática pelo Instituto Federal de Alagoas.",
+      "function": "Desenvolvedor de Jogos",
       "year": {
         "entry": 2022,
         "leave": 2023
@@ -147,9 +129,7 @@
     {
       "order": 10,
       "name": "Lucas Oliveira",
-      "function": "Researcher",
-      "image": "https://firebasestorage.googleapis.com/v0/b/projetosalabox.appspot.com/o/participants%2Flucas.jpeg?alt=media",
-      "bio": "Técnico em Informática pelo Instituto Federal de Educação, Ciência e Tecnologia de Alagoas (IFAL). Interesses de pesquisa envolvem: Desenvolvimento de Software e Jogos.",
+      "function": "Pesquisador",
       "year": {
         "entry": 2018,
         "leave": 2020
@@ -163,9 +143,7 @@
     {
       "order": 11,
       "name": "Júlia Ferreira",
-      "function": "Frontend Developer",
-      "image": "https://firebasestorage.googleapis.com/v0/b/projetosalabox.appspot.com/o/participants%2Fjulia.jpg?alt=media",
-      "bio": "Técnica em Informática pelo Instituto Federal de Educação, Ciência e Tecnologia de Alagoas (IFAL).",
+      "function": "Desenvolvedora Frontend",
       "year": {
         "entry": 2022,
         "leave": 2023
@@ -179,9 +157,7 @@
     {
       "order": 12,
       "name": "Ronaldo Norberto",
-      "function": "Frontend Developer",
-      "image": "https://firebasestorage.googleapis.com/v0/b/projetosalabox.appspot.com/o/participants%2Fronaldo.jpeg?alt=media",
-      "bio": "Técnico em Informática pelo Instituto Federal de Educação, Ciência e Tecnologia de Alagoas (IFAL). Interesses de pesquisa envolvem: Desenvolvimento de Software e Inteligência Artificial.",
+      "function": "Desenvolvedora Frontend",
       "year": {
         "entry": 2022,
         "leave": 2023
@@ -195,9 +171,7 @@
     {
       "order": 13,
       "name": "Mayara Silva",
-      "function": "Frontend Developer",
-      "image": "https://firebasestorage.googleapis.com/v0/b/projetosalabox.appspot.com/o/participants%2Fmayara.png?alt=media",
-      "bio": "Técnica em Informática pelo Instituto Federal de Educação, Ciência e Tecnologia de Alagoas (IFAL).",
+      "function": "Desenvolvedora Frontend",
       "year": {
         "entry": 2022,
         "leave": 2023
