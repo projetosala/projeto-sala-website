@@ -4,8 +4,5 @@
   "editor.detectIndentation": true,
   "workbench.tree.indent": 15,
   "editor.formatOnSave": true,
-  "editor.codeActionsOnSave": {
-    "source.fixAll.eslint": "explicit"
-  },
   "editor.trimAutoWhitespace": true
 }

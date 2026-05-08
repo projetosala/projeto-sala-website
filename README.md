@@ -1,46 +1,65 @@
 # Projeto S.A.L.A
 
-Caso queira contribuir com novas funcionalidades, melhorias e/ou correções no projeto, siga os passos do arquivo [CONTRIBUTING.md](./.github/doc/CONTRIBUTING.md) e dá uma conferida no nosso [Fluxo de Trabalho](./.github/doc/workflow.md).
+Uma série de ferramentas para o ensino e aprendizagem da biogeografia alagoana.
 
-## :art: Design
-O design do site foi criado no Figma. Para acessar o protótipo, [clique aqui](https://figma.com/file/F4AeiLaW8Yi7zr4eCuLtpX/Website).
+## Ambiente
 
-![Design](https://github.com/projetosala/projeto-sala-website/assets/40719464/a8d10a04-2760-486c-a651-dd426c73ad05)
+Para rodar localmente, instale:
 
-## :wrench: Ambiente de Desenvolvimento
-Para que todos tenham o ambiente de desenvolvimento o mais parecido possível e evitar problemas, certifique-se de ter as ferramentas acima com as seguintes versões:
+- Ruby
+- Bundler
+- Jekyll
 
-| Ferramenta | Versão         |
-| ---------- | -------------- |
-| Git        | A mais recente |
-| NodeJS     | v22.14.0       |
+Com isso pronto:
 
-Para instalar as devidas versões, siga o passo a passo do arquivo [`dev-environment.md`](./.github/doc/dev-environment.md).
-
-## :compass: Guia de Instalação
-> Com as ferramentas devidamente instaladas, execute os comandos abaixo
-
-### **1. Clonar repositório**
 ```bash
-git clone https://github.com/projetosala/projeto-sala-website.git
+bundle install
+bundle exec jekyll serve
 ```
 
-### **2. Entrar na pasta do projeto**
+O site ficará disponível em `http://localhost:4000`.
+
+Se preferir usar Docker, o repositório também inclui [compose.yml](./compose.yml):
+
 ```bash
-cd projeto-sala-website
+docker compose up
 ```
 
-### **3. Instalar as dependências**
-```bash
-npm install
+## Publicando artigos
+
+Para criar um novo artigo:
+
+1. Crie um arquivo em [\_posts](./_posts) com o padrão `YYYY-MM-DD-slug.md`.
+2. Use front matter com pelo menos `layout`, `title`, `date` e `permalink`.
+3. Escreva o conteúdo em Markdown ou HTML abaixo do front matter.
+
+Exemplo:
+
+```md
+---
+layout: post
+title: "Título do artigo"
+date: 2026-05-08 10:00:00 -0300
+permalink: /artigos/titulo-do-artigo/
+tags: ["educação ambiental"]
+excerpt: "Resumo curto do artigo para os cards."
+---
+
+Conteúdo do artigo.
 ```
 
-### **4. Criar arquivo de variáveis de ambiente**
-Crie uma cópia do arquivo [`.env.example`](./.env.example) na raiz do projeto com o nome `.env` e preencha com os devidos valores.
+## Deploy
 
-### **5. Executar a aplicação**
-```bash
-npm run dev
-```
+O deploy no GitHub Pages está automatizado em [.github/workflows/deploy-pages.yml](./.github/workflows/deploy-pages.yml).
 
-O site estará disponível em `http://localhost:3000`
+Para ativar:
+
+1. No GitHub, abra `Settings > Pages`.
+2. Em `Source`, selecione `GitHub Actions`.
+3. Faça push na branch `main`.
+
+## Licença
+
+Código licenciado sob a [Licença MIT](./LICENSE).
+
+Conteúdo e artigos © Projeto S.A.L.A.

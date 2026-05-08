@@ -1,0 +1,14 @@
+<section class="hero">
+  {% include menu.html %}
+  <div class="hero__content">
+    <h1 class="hero__title">{{ include.title }}</h1>
+    <p class="hero__description">{{ include.description }}</p>
+  </div>
+  {% if include.show_chevron != false %}
+    <div class="hero__chevron" aria-hidden="true">
+      <svg viewBox="0 0 24 24" focusable="false">
+        <path d="M6 9l6 6 6-6" />
+      </svg>
+    </div>
+  {% endif %}
+</section>

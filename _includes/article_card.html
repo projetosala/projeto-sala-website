@@ -1,0 +1,13 @@
+<a class="article-card" href="{{ include.url | relative_url }}">
+  <div class="article-card__content">
+    <h3 class="article-card__title">{{ include.title }}</h3>
+    <p class="article-card__description">{{ include.description }}</p>
+    <div class="article-card__meta">
+      <p>{{ include.date }}</p>
+      {% if include.tags and include.tags != "" %}
+        <span class="article-card__divider">|</span>
+        <p>{{ include.tags }}</p>
+      {% endif %}
+    </div>
+  </div>
+</a>

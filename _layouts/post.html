@@ -1,0 +1,35 @@
+---
+layout: default
+---
+{% assign post_description = page.excerpt | default: page.description | strip_html | strip_newlines | truncate: 180 %}
+{% capture formatted_post_date %}{{ page.date | date: "%-d" }} {% include format_date.html date=page.date %}, {{ page.date | date: "%Y" }}{% endcapture %}
+{% include site_header.html title=page.title description=post_description show_chevron=false %}
+<main>
+  <article class="post-shell">
+    <div class="post-shell__content">
+      <div class="article-card__meta article-card__meta--post">
+        <p>{{ formatted_post_date | strip }}</p>
+        {% if page.tags and page.tags.size > 0 %}
+          <span class="article-card__divider">|</span>
+          <p>
+            {% for tag in page.tags %}
+              #{{ tag }}{% unless forloop.last %} {% endunless %}
+            {% endfor %}
+          </p>
+        {% endif %}
+      </div>
+
+      <div class="post-content">
+        {{ content }}
+      </div>
+
+      {% if page.original_url %}
+        <p class="post-origin">
+          Conteúdo migrado do acervo anterior.
+          <a href="{{ page.original_url }}" target="_blank" rel="noreferrer">Ver publicação original</a>
+        </p>
+      {% endif %}
+    </div>
+  </article>
+</main>
+{% include footer.html %}

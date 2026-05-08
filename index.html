@@ -1,0 +1,57 @@
+---
+layout: page
+title: Projeto S.A.L.A
+description: Uma abordagem lúdica sobre a importância da preservação do meio ambiente alagoano
+body_class: page-home
+---
+{% assign intro = site.data.home_page_content.intro %}
+
+{% include section_header.html title="S.A.L.A" description=intro %}
+
+<div class="cta-section__footer">
+  <a class="button" href="{{ '/o-projeto/' | relative_url }}">
+    Conheça o projeto
+    <svg viewBox="0 0 24 24" focusable="false">
+      <path d="M5 12h14M13 5l7 7-7 7" />
+    </svg>
+  </a>
+</div>
+
+<section class="carousel-shell">
+  <div
+    class="carousel"
+    data-carousel
+    data-current-index="0"
+    data-items='{{ site.data.gallery_content.images | jsonify }}'
+  >
+    <div class="carousel__previous">
+      <button class="icon-button" type="button" data-carousel-previous aria-label="Imagem anterior">
+        <svg viewBox="0 0 24 24" focusable="false">
+          <path d="M19 12H5M11 5l-7 7 7 7" />
+        </svg>
+      </button>
+    </div>
+
+    <article class="carousel__viewport">
+      {% assign first_image = site.data.gallery_content.images.first %}
+      <img
+        class="carousel__image"
+        src="{{ first_image.url }}"
+        alt="{{ first_image.legend }}"
+        data-carousel-image
+      >
+      <footer class="carousel__footer">
+        <p class="carousel__legend" data-carousel-legend>{{ first_image.legend }}</p>
+        <p data-carousel-year>{{ first_image.year }}</p>
+      </footer>
+    </article>
+
+    <div class="carousel__next">
+      <button class="icon-button" type="button" data-carousel-next aria-label="Próxima imagem">
+        <svg viewBox="0 0 24 24" focusable="false">
+          <path d="M5 12h14M13 5l7 7-7 7" />
+        </svg>
+      </button>
+    </div>
+  </div>
+</section>

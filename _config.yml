@@ -1,0 +1,12 @@
+title: Projeto S.A.L.A
+description: Uma abordagem lúdica sobre a importância da preservação do meio ambiente alagoano
+lang: pt-BR
+timezone: America/Fortaleza
+baseurl: ""
+markdown: kramdown
+permalink: pretty
+plugins:
+  - jekyll-feed
+exclude:
+  - node_modules
+  - vendor

@@ -1,0 +1,40 @@
+---
+layout: page
+title: O Projeto
+description: Um pouco do que inspirou esta iniciativa, quem nós somos e o que conseguimos construir
+keywords: gamificação, alagoas, biomas
+body_class: page-project
+---
+{% capture history_description %}
+  {{ site.data.home_page_content.intro | strip_html | truncate: 1000 }}
+{% endcapture %}
+
+{% include section_header.html title="A história" description=history_description %}
+
+<div class="cta-section__footer">
+  <a class="button" href="{{ '/historia-do-projeto/' | relative_url }}">
+    Continue lendo
+    <svg viewBox="0 0 24 24" focusable="false">
+      <path d="M5 12h14M13 5l7 7-7 7" />
+    </svg>
+  </a>
+</div>
+
+<section class="goals-box">
+  <div class="goals-box__content">
+    <h2 class="goals-box__title">Objetivos</h2>
+    <ul class="goals-box__list">
+      {% for goal in site.data.project.project_page_content.goals %}
+        <li>{{ goal }}</li>
+      {% endfor %}
+    </ul>
+  </div>
+</section>
+
+{% include section_header.html title="Membros" description="Todos os membros que fazem e que fizeram parte do projeto" %}
+
+<section class="participants-list">
+  {% for participant in site.data.project.participants.participants %}
+    {% include participant_card.html participant=participant %}
+  {% endfor %}
+</section>

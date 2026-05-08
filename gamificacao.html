@@ -1,0 +1,43 @@
+---
+layout: page
+title: Gamificação
+description: Você quer aprender ou se divertir? E que tal os dois?
+keywords: realidade aumentada, RPG, tabuleiro
+body_class: page-games
+---
+
+<section class="games-shell">
+  {% include section_header.html title="Gamificação"
+  description=site.data.gamification_content.gamification %}
+
+  <div class="games-steps">
+    {% for game in site.data.gamification_content.games %}
+    <div class="game-step">
+      {% if game.isActive %}
+      <a class="game-card" href="{{ game.route | relative_url }}">
+        <div class="game-card__content">
+          <img
+            class="game-card__image"
+            src="{{ game.imageUrl }}"
+            alt="{{ game.name }}"
+          />
+          <p class="game-card__name">{{ game.name }}</p>
+        </div>
+        <svg viewBox="0 0 24 24" focusable="false">
+          <path d="M5 12h14M13 5l7 7-7 7" />
+        </svg>
+      </a>
+      {% else %}
+      <div class="game-card game-card--disabled" aria-disabled="true">
+        <div class="game-card__content">
+          <div class="game-card__placeholder">?</div>
+          <p class="game-card__name">Em breve</p>
+        </div>
+      </div>
+      {% endif %} {% unless forloop.last %}
+      <div class="game-step__line" aria-hidden="true"></div>
+      {% endunless %}
+    </div>
+    {% endfor %}
+  </div>
+</section>
