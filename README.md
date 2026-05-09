@@ -25,10 +25,6 @@ Se preferir usar Docker, o repositório também inclui [compose.yml](./compose.y
 docker compose up
 ```
 
-## Deploy
-
-O deploy no GitHub Pages é feito automaticamente pelo workflow [`.github/workflows/deploy-pages.yml`](./.github/workflows/deploy-pages.yml) a cada push na branch `main`.
-
 ## Publicando artigos
 
 Para criar um novo artigo:
