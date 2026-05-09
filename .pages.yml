@@ -1,5 +1,5 @@
 media:
-  input: /images
+  input: images
   output: /images
 
 content:
@@ -14,6 +14,7 @@ content:
         label: Layout
         type: string
         default: post
+        required: true
 
       - name: title
         label: Título
@@ -28,6 +29,8 @@ content:
       - name: permalink
         label: Permalink
         type: string
+        default: /artigos/{slug}
+        required: true
 
       - name: tags
         label: Tags
@@ -37,7 +40,9 @@ content:
       - name: excerpt
         label: Resumo
         type: text
+        required: true
 
       - name: body
         label: Conteúdo
         type: rich-text
+        required: true
