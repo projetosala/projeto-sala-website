@@ -6,15 +6,15 @@ content:
   - name: artigos
     label: Artigos
     type: collection
-    path: artigos
-    filename: "{slug}.md"
+    path: _posts
+    filename: "{year}-{month}-{day}-{slug}.md"
 
     fields:
       - name: layout
         label: Layout
         type: string
         default: post
-        required: true
+        hidden: true
 
       - name: title
         label: Título
@@ -29,7 +29,7 @@ content:
       - name: permalink
         label: Permalink
         type: string
-        default: /artigos/{slug}
+        default: /artigos/{slug}/
         required: true
 
       - name: tags
