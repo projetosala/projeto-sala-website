@@ -30,7 +30,7 @@ docker compose up
 Para criar um novo artigo:
 
 1. Crie um arquivo em [\_posts](./_posts) com o padrão `YYYY-MM-DD-slug.md`.
-2. Use front matter com pelo menos `layout`, `title`, `date` e `permalink`.
+2. Use front matter com pelo menos `layout`, `title` e `date`.
 3. Escreva o conteúdo em Markdown ou HTML abaixo do front matter.
 
 Exemplo:
@@ -40,13 +40,15 @@ Exemplo:
 layout: post
 title: "Título do artigo"
 date: 2026-05-08 10:00:00 -0300
-permalink: /artigos/titulo-do-artigo/
 tags: ["educação ambiental"]
 excerpt: "Resumo curto do artigo para os cards."
 ---
 
 Conteúdo do artigo.
 ```
+
+Os posts em `/_posts` já recebem automaticamente a URL no formato
+`/artigos/:slug/`.
 
 ## Licença
 

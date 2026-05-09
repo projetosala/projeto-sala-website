@@ -1,10 +1,9 @@
 ---
 layout: post
 title: 'Sobre o Jogo "Mutum: Desafio ambiental"'
-date: '2022-09-18T04:21:00.012Z'
-permalink: /artigos/sobre-o-jogo-mutum-desafio-ambiental/
+date: "2022-09-18T04:21:00.012Z"
 tags:
-  - 'Mutum: Desafio ambiental'
+  - "Mutum: Desafio ambiental"
 excerpt: >-
   O jogo é composto por um tabuleiro com medidas de 66cmX50cm e é constituído
   pela conexão de três mesorregiões de Alagoas a partir da pista de largada. O

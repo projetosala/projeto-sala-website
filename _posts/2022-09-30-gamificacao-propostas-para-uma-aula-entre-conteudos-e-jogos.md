@@ -1,8 +1,7 @@
 ---
 layout: post
-title: 'Gamificação: Propostas para uma aula entre conteúdos e jogos'
-date: '2022-09-30T19:33:00.007Z'
-permalink: /artigos/gamificacao-propostas-para-uma-aula-entre-conteudos-e-jogos/
+title: "Gamificação: Propostas para uma aula entre conteúdos e jogos"
+date: "2022-09-30T19:33:00.007Z"
 tags: []
 excerpt: >-
   Em algum momento da vida, você já utilizou para si ou para terceiros a
@@ -10,6 +9,7 @@ excerpt: >-
   literalmente mergulhar no assunto, caindo de cabeça no contexto das
   atividades,
 ---
+
 Em algum momento da vida, você já utilizou para si ou para terceiros a expressão: “cair de cabeça”. Nas atividades diárias, o professor pode literalmente mergulhar no assunto, caindo de cabeça no contexto das atividades, leituras, dinâmicas propostas ou, por sua vez, apenas apresentar de forma clara, objetiva e correta todos os conceitos e práticas necessárias para a aprendizagem.
 
 O questionamento gira em torno do interesse. É válida a preocupação existente, da necessidade que o aluno deve ter em estudar no ambiente fora da escola. Ter o seu momento de leitura e prática para contribuir com o processo de ensino. Como aponta Majmutov (1983):
@@ -97,7 +97,7 @@ Em um momento posterior, todas as ferramentas citadas serão explanadas. Não se
 
 7 dicas para engajar seus alunos através da gamificação. Equipe Elos. Blog. Porto Alegre, 08 de julho de 2019. Disponível em [https://blog.elos.vc/7-dicas-para-engajar-seus-alunos-atraves-da-gamificacao/](https://blog.elos.vc/7-dicas-para-engajar-seus-alunos-atraves-da-gamificacao/). Acessado em 11 de agosto de 2022.
 
-ALVES, Lynn. Nativos Digitais: Games, Comunidades e Aprendizagens. Disponível em: <[http://www.multirio.rj.gov.br/portal/riomidia/rm\_materia\_conteudo.asp?idioma=](http://www.multirio.rj.gov.br/portal/riomidia/rm_materia_conteudo.asp?idioma=) 1&idMenu=5&label=Artigos&v\_nome\_area=Artigos&v\_id\_conteudo=65515> Acesso em: 10 de julho de 2022.
+ALVES, Lynn. Nativos Digitais: Games, Comunidades e Aprendizagens. Disponível em: <[http://www.multirio.rj.gov.br/portal/riomidia/rm_materia_conteudo.asp?idioma=](http://www.multirio.rj.gov.br/portal/riomidia/rm_materia_conteudo.asp?idioma=) 1&idMenu=5&label=Artigos&v_nome_area=Artigos&v_id_conteudo=65515> Acesso em: 10 de julho de 2022.
 
 ARAÚJO, Marcelo Pereira De et al.. Metodologias ativas: gamificação no processo de aprendizagem. Anais VI CONEDU... Campina Grande: Realize Editora, 2019. Disponível em: <[https://editorarealize.com.br/artigo/visualizar/61117](https://editorarealize.com.br/artigo/visualizar/61117)\>. Acesso em: 24/09/2022
 
@@ -117,6 +117,6 @@ McGonigal J. A realidade em jogo: porque os games nos tornam melhores e como ele
 
 Metodologias ativas de aprendizagem: o que são e 13 tipos. Totvs – Gestão para Instituições de ensino. Blog. 16 de maio de 2022. Disponível em: [https://www.totvs.com/blog/instituicao-de-ensino/metodologias-ativas-de-aprendizagem/](https://www.totvs.com/blog/instituicao-de-ensino/metodologias-ativas-de-aprendizagem/) . Acessado em 16 de junho de 2022.
 
-SCHLEMMER, Eliane. O Trabalho do Professor e as Novas Tecnologias. Revista TEXTUAL de setembro de 2006 (SINPRO-RS, vol. 1, nº8). Disponível em: <[http://www.sinpro-rs.org.br/textual/set06/artigo\_tecnologia.pdf](http://www.sinpro-rs.org.br/textual/set06/artigo_tecnologia.pdf) >. Acesso em 25 de agosto de 2022.
+SCHLEMMER, Eliane. O Trabalho do Professor e as Novas Tecnologias. Revista TEXTUAL de setembro de 2006 (SINPRO-RS, vol. 1, nº8). Disponível em: <[http://www.sinpro-rs.org.br/textual/set06/artigo_tecnologia.pdf](http://www.sinpro-rs.org.br/textual/set06/artigo_tecnologia.pdf) >. Acesso em 25 de agosto de 2022.
 
 WERBACH, K.; HUNTER, D. For the Win: How Game Thinking Can Revolutionize Your Business. Wharton Digital Press, Pennsylvania, 2012. 1. Edition. Philadelphia: Wharton 12 Digital Press, 2013.

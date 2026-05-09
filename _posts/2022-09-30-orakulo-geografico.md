@@ -1,8 +1,7 @@
 ---
 layout: post
-title: 'Orákulo Geográfico: A Cartografia sobre o olhar de um jogo'
-date: '2022-09-30T19:34:00.012Z'
-permalink: /artigos/orakulo-geografico/
+title: "Orákulo Geográfico: A Cartografia sobre o olhar de um jogo"
+date: "2022-09-30T19:34:00.012Z"
 tags:
   - Orákulo Geográfico
 excerpt: >-
@@ -10,6 +9,7 @@ excerpt: >-
   escrito, é uma visão particular da sala de aula e de como a gamificação,
   através de jogos de tabuleiro, virtuais e com realidade aumentada, mudaram a
 ---
+
 A todos os que vão ler o texto abaixo, deixo claro que tudo o que está escrito, é uma visão particular da sala de aula e de como a gamificação, através de jogos de tabuleiro, virtuais e com realidade aumentada, mudaram a perspectiva do ensino de mapas, projeções, ciência geográfica e fusos horários.
 
 Enquanto educador/professor sempre tive como meta, fazer com que os meus alunos pudessem aprender o conteúdo. Sei o quanto isso é clichê, até mesmo, por acreditar que este é o desejo de todo professor. Mas quando penso em aprendizagem, penso em um aprender para a vida toda.

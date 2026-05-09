@@ -1,15 +1,15 @@
 ---
 layout: post
 title: 'Como jogar "Mutum: Desafio ambiental"?'
-date: '2022-09-18T03:49:00.007Z'
-permalink: /artigos/como-jogar/
+date: "2022-09-18T03:49:00.007Z"
 tags:
-  - 'Mutum: Desafio ambiental'
+  - "Mutum: Desafio ambiental"
 excerpt: >-
   O Tabuleiro Didático I tem por objetivo a preservação do ambiente em 14
   cidades distintas do estado de Alagoas, escolhidas tendo por critério o
   histórico jornalístico ou elementos próximos com realidades ambientais que i
 ---
+
 O Tabuleiro Didático I tem por objetivo a preservação do ambiente em 14 cidades distintas do estado de Alagoas, escolhidas tendo por critério o histórico jornalístico ou elementos próximos com realidades ambientais que indicam degradação na fauna, na flora ou ambientes históricos. As equipes do jogo devem escolher uma das três possibilidades ambientais (mesorregiões) e posicionar-se próximo ao ambiente encontrado no tabuleiro.
 
 Deve ser formado, no máximo, três grupos Furtivos, no modelo tradicional de jogo (Com limite de 50 participantes divididos nas três equipes). Cada jogador pode ter no máximo 2 personagens, sendo por rodada utilizado apenas um deles. Caso o jogador decida por dois personagens, deve escolher somente um de cada grupo:Grupo 01: Turista;  

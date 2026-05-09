@@ -26,12 +26,6 @@ content:
         type: date
         required: true
 
-      - name: permalink
-        label: Permalink
-        type: string
-        default: /artigos/{slug}/
-        required: true
-
       - name: tags
         label: Tags
         type: string

@@ -10,6 +10,13 @@ repository: projetosala/projeto-sala-website
 markdown: kramdown
 permalink: pretty
 
+defaults:
+  - scope:
+      path: ""
+      type: posts
+    values:
+      permalink: /artigos/:slug/
+
 plugins:
   - jekyll-feed
 
