@@ -3,7 +3,8 @@ layout: post
 title: 'Orákulo Geográfico: A Cartografia sobre o olhar de um jogo'
 date: '2022-09-30T19:34:00.012Z'
 permalink: /artigos/orakulo-geografico/
-tags: []
+tags:
+  - Orákulo Geográfico
 excerpt: >-
   A todos os que vão ler o texto abaixo, deixo claro que tudo o que está
   escrito, é uma visão particular da sala de aula e de como a gamificação,
