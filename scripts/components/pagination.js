@@ -1,15 +1,4 @@
-document.addEventListener("DOMContentLoaded", () => {
-  const menu = document.querySelector("[data-menu-list]");
-  const toggle = document.querySelector("[data-menu-toggle]");
-
-  if (menu && toggle) {
-    toggle.addEventListener("click", () => {
-      const isOpen = menu.classList.toggle("is-open");
-      toggle.setAttribute("aria-expanded", String(isOpen));
-      document.body.classList.toggle("menu-open", isOpen);
-    });
-  }
-
+export function initPagination() {
   const paginations = document.querySelectorAll("[data-pagination]");
 
   paginations.forEach((pagination) => {
@@ -21,10 +10,11 @@ document.addEventListener("DOMContentLoaded", () => {
     const perPage = Number(pagination.dataset.perPage || 3);
     const totalPages = Math.ceil(items.length / perPage);
 
-    if (!controls || totalPages <= 1) {
+    if (!controls || !previous || !next || !status || totalPages <= 1) {
       if (controls) {
         controls.hidden = true;
       }
+
       items.forEach((item) => {
         item.hidden = false;
       });
@@ -46,14 +36,14 @@ document.addEventListener("DOMContentLoaded", () => {
       next.disabled = currentPage === totalPages;
     };
 
-    previous?.addEventListener("click", () => {
+    previous.addEventListener("click", () => {
       if (currentPage > 1) {
         currentPage -= 1;
         renderPage();
       }
     });
 
-    next?.addEventListener("click", () => {
+    next.addEventListener("click", () => {
       if (currentPage < totalPages) {
         currentPage += 1;
         renderPage();
@@ -62,4 +52,4 @@ document.addEventListener("DOMContentLoaded", () => {
 
     renderPage();
   });
-});
+}

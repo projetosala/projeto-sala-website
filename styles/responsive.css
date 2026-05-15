@@ -1,0 +1,189 @@
+@media (max-width: 960px) {
+  .home-panel__grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .participants-list--grid {
+    grid-template-columns: 1fr;
+  }
+
+  .game-card {
+    max-width: 680px;
+  }
+}
+
+@media (max-width: 650px) {
+  .menu {
+    top: 25px;
+    left: 16px;
+    width: calc(100% - 32px);
+    padding: 0.9em 5%;
+    transform: none;
+  }
+
+  .menu__brand--mobile {
+    display: flex;
+  }
+
+  .menu__logo-image {
+    width: 50px;
+    height: 50px;
+  }
+
+  .menu__item--logo {
+    display: none;
+  }
+
+  .menu__toggle {
+    display: inline-flex;
+  }
+
+  .menu__list {
+    position: absolute;
+    top: calc(100% + 12px);
+    left: 0;
+    right: 0;
+    display: none;
+    width: 100%;
+    padding: 0;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+    background: var(--section-medium);
+  }
+
+  .menu__list.is-open {
+    display: block;
+  }
+
+  .menu__item {
+    width: 100%;
+  }
+
+  .menu__link {
+    width: 100%;
+    padding: 20px;
+    border-bottom: var(--light-border);
+  }
+
+  .menu__item:last-child .menu__link {
+    border-bottom: none;
+  }
+
+  .hero {
+    min-height: 90vh;
+  }
+
+  .hero--compact {
+    min-height: 260px;
+    padding-top: 150px;
+  }
+
+  .hero__title {
+    font-size: 4rem;
+  }
+
+  .section-header,
+  .archive-shell,
+  .goals-box,
+  .post-shell,
+  .home-panel {
+    padding: 50px;
+  }
+
+  .participants-list {
+    padding: 0 50px 50px;
+  }
+
+  .home-actions {
+    padding: 0 50px 50px;
+  }
+
+  .home-panel__grid {
+    grid-template-columns: 1fr;
+  }
+
+  .game-card {
+    width: calc(100% - 32px);
+    padding: 18px;
+    border-radius: 14px;
+  }
+
+  .game-card__content {
+    align-items: flex-start;
+  }
+
+  .game-card__image,
+  .game-card__placeholder {
+    width: 72px;
+    height: 72px;
+  }
+
+  .game-card__name {
+    font-size: 2.2rem;
+  }
+
+  .home-actions__content .button,
+  .home-actions__content .button--secondary {
+    width: 100%;
+  }
+
+  .pagination-controls {
+    flex-direction: column;
+  }
+
+  .article-card__meta {
+    flex-direction: column;
+  }
+
+  .article-card__divider,
+  .participant-card__dot {
+    display: none;
+  }
+
+  .participant-card__content {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .participant-card__networks {
+    min-width: 0;
+    justify-content: flex-start;
+  }
+}
+
+@media (max-width: 420px) {
+  .section-header,
+  .archive-shell,
+  .goals-box,
+  .post-shell,
+  .home-panel {
+    padding: 30px 20px;
+  }
+
+  .participants-list {
+    padding: 0 20px 30px;
+  }
+
+  .home-actions {
+    padding: 0 20px 30px;
+  }
+
+  .hero__title {
+    font-size: 3.4rem;
+  }
+
+  .game-card {
+    width: calc(100% - 24px);
+    gap: 14px;
+    padding: 16px;
+  }
+
+  .game-card__name {
+    font-size: 2rem;
+  }
+
+  .game-card > svg {
+    width: 22px;
+    height: 22px;
+  }
+}

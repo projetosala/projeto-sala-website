@@ -1,0 +1,16 @@
+.archive-shell {
+  padding: 2rem 6.25rem 5rem;
+}
+
+.archive-shell__content {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.articles-list {
+  padding-bottom: 2rem;
+}
+
+.articles-list [data-page-item] + [data-page-item] .article-card__content {
+  border-top: var(--light-border);
+}

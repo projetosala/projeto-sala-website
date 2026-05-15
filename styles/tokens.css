@@ -1,0 +1,24 @@
+:root {
+  --text-fonts: "Poppins", sans-serif;
+  --title-fonts: "Lora", serif;
+  --big-title-size: 4.8rem;
+  --title-size: 3.2rem;
+  --title-2-size: 2.4rem;
+  --subtitle-size: 2rem;
+  --text-size: 1.8rem;
+  --text-small-size: 1.6rem;
+  --text-tiny-size: 1.4rem;
+  --regular: 400;
+  --semibold: 600;
+  --bold: 700;
+  --primary: #daae84;
+  --text-secondary: #aeaeae;
+  --white: #efefef;
+  --background: #1e2730;
+  --section-light: #303942;
+  --section-medium: #161f28;
+  --section-dark: #151c23;
+  --primary-hover: #ebbf95;
+  --light-border: 1px solid rgba(255, 255, 255, 0.15);
+  --gradient-to-top: linear-gradient(180deg, rgba(30, 39, 48, 0.55) 0%, var(--background) 100%);
+}

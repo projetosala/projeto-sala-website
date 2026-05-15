@@ -1,0 +1,15 @@
+.site-footer {
+  width: 100%;
+  margin-top: 25px;
+  background: var(--section-medium);
+}
+
+.site-footer__text {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 25px;
+  text-align: center;
+  color: rgba(239, 239, 239, 0.82);
+  font-size: var(--text-small-size);
+  line-height: 1.7;
+}

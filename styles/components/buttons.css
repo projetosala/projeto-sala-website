@@ -1,0 +1,47 @@
+.button,
+.button--secondary {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  padding: 10px 20px;
+  border-radius: 8px;
+  text-transform: uppercase;
+  transition: all 0.3s;
+}
+
+.button {
+  background: var(--primary);
+  color: var(--section-dark);
+  font-size: var(--text-small-size);
+  font-weight: var(--bold);
+}
+
+.button:hover {
+  background: var(--primary-hover);
+}
+
+.button--secondary {
+  border: 2px solid var(--primary);
+  color: var(--primary);
+  background: transparent;
+  font-size: var(--text-small-size);
+  font-weight: var(--semibold);
+}
+
+.button--secondary:hover {
+  border-color: var(--primary-hover);
+  color: var(--primary-hover);
+}
+
+.button svg,
+.button--secondary svg,
+.icon-button svg {
+  width: 20px;
+  height: 20px;
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 2;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}

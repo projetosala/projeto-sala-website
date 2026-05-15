@@ -1,0 +1,35 @@
+.section-header,
+.archive-shell,
+.goals-box,
+.post-shell {
+  padding: 5rem 6.25rem;
+}
+
+.section-header__content,
+.archive-shell__content,
+.goals-box__content,
+.post-shell__content {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.section-header__title,
+.goals-box__title {
+  margin-bottom: 2.5rem;
+  color: var(--primary);
+  font-family: var(--title-fonts);
+  font-size: var(--title-2-size);
+  font-weight: var(--bold);
+  letter-spacing: 0.03em;
+  line-height: 130%;
+  text-transform: uppercase;
+}
+
+.section-header__description,
+.post-content {
+  line-height: 1.8;
+}
+
+.section-header__description p + p {
+  margin-top: 1.8rem;
+}

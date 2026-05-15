@@ -1,0 +1,77 @@
+.participant-card__content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 18px;
+  min-height: 0;
+  padding: 12px 0;
+  border-bottom: var(--light-border);
+  background: transparent;
+}
+
+.participant-card__identity {
+  min-width: 0;
+  flex: 1;
+}
+
+.participant-card__name {
+  color: var(--white);
+  font-family: var(--title-fonts);
+  font-size: 2rem;
+  font-weight: var(--bold);
+  line-height: 1.15;
+}
+
+.participant-card__meta {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-top: 6px;
+  flex-wrap: wrap;
+}
+
+.participant-card__role {
+  color: var(--primary);
+  font-size: 1.4rem;
+  font-weight: var(--semibold);
+  line-height: 1.4;
+}
+
+.participant-card__dot {
+  width: 4px;
+  height: 4px;
+  border-radius: 999px;
+  background: var(--text-secondary);
+}
+
+.participant-card__time {
+  color: var(--text-secondary);
+  font-size: 1.2rem;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+.participant-card__networks {
+  display: flex;
+  gap: 8px;
+  flex-shrink: 0;
+  justify-content: flex-end;
+  min-width: 112px;
+}
+
+.icon-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  flex-shrink: 0;
+  border-radius: 5px;
+  background: var(--section-light);
+  color: var(--text-secondary);
+  transition: all 0.3s;
+}
+
+.icon-button:hover {
+  color: var(--primary);
+}
