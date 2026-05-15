@@ -4,23 +4,24 @@
     {
       "order": 1,
       "name": "Ecoar: A lenda do Carcará",
-      "imageUrl": "./assets/games/ecoar-logo.png",
-      "isActive": false,
-      "route": "/jogos/ecoar"
+      "imageUrl": "/assets/games/ecoar-logo.png",
+      "isActive": true,
+      "link": "https://projetosala.github.io/ecoar",
+      "isExternal": true
     },
     {
       "order": 2,
       "name": "Enigmas",
-      "imageUrl": "./assets/games/enigmas-logo.png",
+      "imageUrl": "/assets/games/enigmas-logo.png",
       "isActive": false,
-      "route": "/jogos/enigmas"
+      "link": "/jogos/enigmas"
     },
     {
       "order": 3,
       "name": "Mutum: Desafio Ambiental",
-      "imageUrl": "./assets/games/mutum-logo.png",
+      "imageUrl": "/assets/games/mutum-logo.png",
       "isActive": false,
-      "route": "/jogos/mutum"
+      "link": "/jogos/mutum"
     }
   ]
 }

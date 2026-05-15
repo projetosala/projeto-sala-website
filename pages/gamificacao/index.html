@@ -18,12 +18,23 @@ permalink: /gamificacao/
         <span>{{ forloop.index }}</span>
       </div>
 
-      {% if game.isActive %}
-      <a class="game-card" href="{{ game.route | relative_url }}">
+      {% assign game_link = game.link | default: game.route %}
+      {% assign is_external = game.isExternal %}
+
+      {% if game_link contains '://' %}
+      {% assign is_external = true %}
+      {% endif %}
+
+      {% if game.isActive and game_link %}
+      <a
+        class="game-card"
+        href="{% if is_external %}{{ game_link }}{% else %}{{ game_link | relative_url }}{% endif %}"
+        {% if is_external %}target="_blank" rel="noopener noreferrer"{% endif %}
+      >
         <div class="game-card__content">
           <img
             class="game-card__image"
-            src="{{ game.imageUrl }}"
+            src="{{ game.imageUrl | relative_url }}"
             alt="{{ game.name }}"
           />
           <div class="game-card__copy">
