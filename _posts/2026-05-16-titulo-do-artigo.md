@@ -3,7 +3,7 @@ layout: post
 title: Título do artigo
 created_at: 2026-05-16T17:55
 publish_date: 2026-05-16T17:55
-draft: true
+draft: false
 tags:
   - tag 1
   - tag 2
