@@ -56,8 +56,9 @@ Os posts em `/_posts` já recebem automaticamente a URL no formato
 
 - `draft: true` mantém o post fora da listagem e mostra o artigo como indisponível se alguém acessar a URL diretamente.
 - `publish_date` passou a representar a data de publicação e a ordenar os artigos do mais recente para o mais antigo.
-- `created_at` guarda a data de criação do texto e é a data exibida no card e no topo do artigo.
+- `created_at` guarda a data de criação do texto para controle interno no conteúdo.
 - No PagesCMS, `created_at` fica escondido e nasce automaticamente com a data e hora atuais.
+- No site, a data exibida no card e no topo do artigo é a `publish_date`.
 - O repositório inclui a workflow [publish-scheduled-posts.yml](./.github/workflows/publish-scheduled-posts.yml), que usa o script [.github/scripts/publish_scheduled_posts.py](./.github/scripts/publish_scheduled_posts.py).
 - Por enquanto, essa workflow está desativada para execução agendada e pode ser disparada apenas manualmente.
 - Quando você quiser ativá-la, o cron sugerido no arquivo está configurado para rodar 1 vez por dia.

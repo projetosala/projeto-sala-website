@@ -3,7 +3,7 @@ layout: default
 ---
 
 {% assign publish_source = page.publish_date | default: page.date %}
-{% assign display_date = page.created_at | default: publish_source %}
+{% assign display_date = publish_source %}
 
 {% if page.draft == true %}
   {% include site_header.html title="Artigo indisponível" description=""

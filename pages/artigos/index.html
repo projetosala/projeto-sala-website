@@ -33,7 +33,7 @@ permalink: /artigos/
           {% endif %}
         {% endcapture %}
 
-        {% assign display_date = post.created_at | default: publish_source %}
+        {% assign display_date = publish_source %}
 
         {% capture formatted_date %}
           {{ display_date | date: "%-d" }}
