@@ -67,4 +67,8 @@ build-iPhoneSimulator/
 # Used by RuboCop. Remote config files pulled in from inherit_from directive.
 # .rubocop-https?--*
 
+# Python helpers used by CI/CD
+__pycache__/
+*.py[cod]
+
 # End of https://www.toptal.com/developers/gitignore/api/jekyll,ruby

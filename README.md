@@ -54,11 +54,15 @@ Os posts em `/_posts` já recebem automaticamente a URL no formato
 
 ### Drafts e agendamento
 
-- `draft: true` mantém o post fora da listagem e mostra o artigo como indisponivel se alguem acessar a URL diretamente.
-- `publish_date` passou a representar a data de publicacao e a ordenar os artigos do mais recente para o mais antigo.
-- `created_at` guarda a data de criacao do texto e e a data exibida no card e no topo do artigo.
+- `draft: true` mantém o post fora da listagem e mostra o artigo como indisponível se alguém acessar a URL diretamente.
+- `publish_date` passou a representar a data de publicação e a ordenar os artigos do mais recente para o mais antigo.
+- `created_at` guarda a data de criação do texto e é a data exibida no card e no topo do artigo.
 - No PagesCMS, `created_at` fica escondido e nasce automaticamente com a data e hora atuais.
-- Em hospedagens estaticas, o post so entra no ar quando houver um novo build depois da `publish_date`. Se o deploy hoje so acontece em commits, sera preciso adicionar um rebuild agendado para a publicacao acontecer automaticamente no dia certo.
+- O repositório inclui a workflow [publish-scheduled-posts.yml](./.github/workflows/publish-scheduled-posts.yml), que usa o script [.github/scripts/publish_scheduled_posts.py](./.github/scripts/publish_scheduled_posts.py).
+- Por enquanto, essa workflow está desativada para execução agendada e pode ser disparada apenas manualmente.
+- Quando você quiser ativá-la, o cron sugerido no arquivo está configurado para rodar 1 vez por dia.
+- A automação só publica posts que ainda estejam explicitamente com `draft: true`. Se o artigo já estiver com `draft: false`, ela não altera nada e não cria commit desnecessário.
+- Quando encontra um post elegível, a workflow altera esse post para `draft: false`, faz commit e push para disparar um novo build do GitHub Pages.
 
 ## Licença
 
