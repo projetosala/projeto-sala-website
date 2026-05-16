@@ -1,6 +1,6 @@
 media:
-  input: images
-  output: /images
+  input: assets/images
+  output: assets/images
 
 content:
   - name: artigos
