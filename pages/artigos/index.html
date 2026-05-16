@@ -26,8 +26,7 @@ permalink: /artigos/
       {% for post in sorted_posts %}
         {% assign publish_source = post.publish_date | default: post.date %}
         {% assign publish_timestamp = publish_source | date: "%s" | plus: 0 %}
-        {% assign is_visible = post.draft != true and publish_timestamp <= now_timestamp %}
-        {% if is_visible %}
+        {% if post.draft != true and publish_timestamp <= now_timestamp %}
         {% capture tags %}
           {% if post.tags and post.tags.size > 0 %}
             {% for tag in post.tags %}

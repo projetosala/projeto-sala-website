@@ -6,10 +6,8 @@ layout: default
 {% assign publish_source = page.publish_date | default: page.date %}
 {% assign publish_timestamp = publish_source | date: "%s" | plus: 0 %}
 {% assign display_date = page.created_at | default: publish_source %}
-{% assign is_draft = page.draft == true %}
-{% assign is_scheduled = publish_timestamp > now_timestamp %}
 
-{% if is_draft or is_scheduled %}
+{% if page.draft == true or publish_timestamp > now_timestamp %}
   {% include site_header.html title="Artigo indisponível" description=""
   show_chevron=false compact=true %}
   <main>
