@@ -1,7 +1,9 @@
 ---
 layout: post
 title: 'Como jogar "Mutum: Desafio ambiental"?'
-date: "2022-09-18T03:49:00.007Z"
+created_at: "2022-09-18T03:49:00.007Z"
+publish_date: "2022-09-18T03:49:00.007Z"
+draft: false
 tags:
   - "Mutum: Desafio ambiental"
 excerpt: >-

@@ -1,7 +1,9 @@
 ---
 layout: post
 title: 'Sobre o Jogo "Mutum: Desafio ambiental"'
-date: "2022-09-18T04:21:00.012Z"
+created_at: "2022-09-18T04:21:00.012Z"
+publish_date: "2022-09-18T04:21:00.012Z"
+draft: false
 tags:
   - "Mutum: Desafio ambiental"
 excerpt: >-

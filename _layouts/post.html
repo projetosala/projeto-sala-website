@@ -2,26 +2,47 @@
 layout: default
 ---
 
-{% capture formatted_post_date %} {{ page.date | date: "%-d" }} {% include
-format_date.html date=page.date %}, {{ page.date | date: "%Y" }} {% endcapture
-%} {% include site_header.html title=page.title description=""
-show_chevron=false compact=true %}
-<main>
-  <article class="post-shell">
-    <div class="post-shell__content">
-      <div class="article-card__meta article-card__meta--post">
-        <p>{{ formatted_post_date | strip }}</p>
-        {% if page.tags and page.tags.size > 0 %}
-        <span class="article-card__divider">|</span>
-        <p>
-          {% for tag in page.tags %} #{{ tag }}{% unless forloop.last %} {%
-          endunless %} {% endfor %}
-        </p>
-        {% endif %}
-      </div>
+{% assign now_timestamp = site.time | date: "%s" | plus: 0 %}
+{% assign publish_source = page.publish_date | default: page.date %}
+{% assign publish_timestamp = publish_source | date: "%s" | plus: 0 %}
+{% assign display_date = page.created_at | default: publish_source %}
+{% assign is_draft = page.draft == true %}
+{% assign is_scheduled = publish_timestamp > now_timestamp %}
 
-      <div class="post-content">{{ content }}</div>
-    </div>
-  </article>
-</main>
+{% if is_draft or is_scheduled %}
+  {% include site_header.html title="Artigo indisponível" description=""
+  show_chevron=false compact=true %}
+  <main>
+    <article class="post-shell">
+      <div class="post-shell__content">
+        <div class="post-content">
+          <p>Este artigo ainda nao esta disponivel publicamente.</p>
+        </div>
+      </div>
+    </article>
+  </main>
+{% else %}
+  {% capture formatted_post_date %} {{ display_date | date: "%-d" }} {% include
+  format_date.html date=display_date %}, {{ display_date | date: "%Y" }} {% endcapture
+  %} {% include site_header.html title=page.title description=""
+  show_chevron=false compact=true %}
+  <main>
+    <article class="post-shell">
+      <div class="post-shell__content">
+        <div class="article-card__meta article-card__meta--post">
+          <p>{{ formatted_post_date | strip }}</p>
+          {% if page.tags and page.tags.size > 0 %}
+          <span class="article-card__divider">|</span>
+          <p>
+            {% for tag in page.tags %} #{{ tag }}{% unless forloop.last %} {%
+            endunless %} {% endfor %}
+          </p>
+          {% endif %}
+        </div>
+
+        <div class="post-content">{{ content }}</div>
+      </div>
+    </article>
+  </main>
+{% endif %}
 {% include footer.html %}

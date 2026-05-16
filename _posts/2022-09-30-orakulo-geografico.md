@@ -1,7 +1,9 @@
 ---
 layout: post
 title: "Orákulo Geográfico: A Cartografia sobre o olhar de um jogo"
-date: "2022-09-30T19:34:00.012Z"
+created_at: "2022-09-30T19:34:00.012Z"
+publish_date: "2022-09-30T19:34:00.012Z"
+draft: false
 tags:
   - Orákulo Geográfico
 excerpt: >-

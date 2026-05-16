@@ -8,6 +8,13 @@ content:
     type: collection
     path: _posts
     filename: "{year}-{month}-{day}-{slug}.md"
+    view:
+      fields: [title, draft, publish_date, created_at]
+      primary: title
+      sort: [publish_date, created_at, title]
+      default:
+        sort: publish_date
+        order: desc
 
     fields:
       - name: layout
@@ -21,10 +28,25 @@ content:
         type: string
         required: true
 
-      - name: date
-        label: Data
+      - name: created_at
+        label: Data de criação
+        type: date
+        hidden: true
+        options:
+          time: true
+
+      - name: publish_date
+        label: Data de publicação
         type: date
         required: true
+        options:
+          time: true
+
+      - name: draft
+        label: Rascunho
+        type: boolean
+        default: true
+        description: Se estiver ativo, o artigo não aparece no site.
 
       - name: tags
         label: Tags

@@ -1,7 +1,9 @@
 ---
 layout: post
 title: "Gamificação: Propostas para uma aula entre conteúdos e jogos"
-date: "2022-09-30T19:33:00.007Z"
+created_at: "2022-09-30T19:33:00.007Z"
+publish_date: "2022-09-30T19:33:00.007Z"
+draft: false
 tags: []
 excerpt: >-
   Em algum momento da vida, você já utilizou para si ou para terceiros a
