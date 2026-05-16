@@ -2,12 +2,10 @@
 layout: default
 ---
 
-{% assign now_timestamp = site.time | date: "%s" | plus: 0 %}
 {% assign publish_source = page.publish_date | default: page.date %}
-{% assign publish_timestamp = publish_source | date: "%s" | plus: 0 %}
 {% assign display_date = page.created_at | default: publish_source %}
 
-{% if page.draft == true or publish_timestamp > now_timestamp %}
+{% if page.draft == true %}
   {% include site_header.html title="Artigo indisponível" description=""
   show_chevron=false compact=true %}
   <main>
